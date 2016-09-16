@@ -1,0 +1,110 @@
+.competitors_disadvantages {
+  i {
+    color: #9c27b0;
+  }
+}
+
+.our_advantages {
+  i {
+    color: #FF6D00;
+  }
+}
+
+#objections {
+  .subtitle {
+    margin-top: -10px !important;
+  }
+}
+
+.landing-page .section-features .card p {
+  text-align: left;
+}
+
+.icon {
+  i.icon-uber {
+    top: 11px;
+    position: relative;
+    color: black !important;
+  }
+}
+
+.line {
+  display: block;
+  margin: 0 auto;
+  margin-bottom:10px;
+  position: relative;
+  text-align: center;
+  width: 85%;
+
+  span {
+    color: #666;
+  }
+
+  .left {
+    background: #C3C3C3;
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 40%;
+  }
+
+  .right {
+    background: #C3C3C3;
+    display: block;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 40%;
+  }
+}
+
+#comparison {
+  h5 {
+    font-size: 1.5em;
+  }
+
+  .row:nth-child(even) {
+    background: #f9f9f9;
+  }
+
+  .col-md-2 h5 {
+    vertical-align: middle;
+  }
+
+  .comparative {
+    padding: 15px 0;
+    font-size: 1.2em;
+  }
+}
+
+input[type="text"],
+input[type="password"] {
+  background: #fff !important;
+  border: 1px solid whitesmoke !important;
+}
+
+.btn-warning.btn-fill {
+  background: #ff850c !important;
+}
+
+.btn-warning.btn-fill:hover {
+  background: #ff9700 !important;
+}
+
+.filter-gradient.orange:after {
+  background-color: transparent!important;
+  background: -moz-linear-gradient(top, #ff9700,rgba(0,34,62,.87) 100%)!important;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ff9700),color-stop(100%,rgba(0,34,62,.87)))!important;
+  background: -webkit-linear-gradient(top,#ff9700,rgba(0,34,62,.87) 100%)!important;
+  background: -o-linear-gradient(top,#ff9700,rgba(0,34,62,.87) 100%)!important;
+  background: -ms-linear-gradient(top,#ff9700,rgba(0,34,62,.87) 100%)!important;
+  background: linear-gradient(to bottom,#ff9700,rgba(0,34,62,.87) 100%)!important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9700', endColorstr='#de00223e', GradientType=0 )!important;
+}
+
+.icon {
+  top: 4px;
+  position: relative;
+}

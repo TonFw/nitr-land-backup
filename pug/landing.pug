@@ -1,0 +1,193 @@
+// NavBar
+nav.navbar.navbar-transparent.navbar-top(role="navigation")
+  .container
+    .navbar-header
+      a(href="#")
+        .logo-container
+          h2.brand-font-icon
+            i(class="icon {{ content.brand.icon }}")
+            | {{ content.brand.name }}
+
+
+// Content
+.wrapper
+  // banner section
+  div(class="parallax filter-gradient {{ visual_identity.color }}")
+    .parallax-background
+      img.parallax-background-image(src="images/shutup-take-money.jpg")
+    .container(style="margin-left: 10%;")
+      .row
+        .col-md-7
+          .description
+            h2 {{ content.banner.main_value }}
+            h4 {{ content.banner.second_value }}
+            h5
+              ul
+                li(ng-repeat="bullet in content.banner.bullets") {{ bullet }}
+          .call_to_action.col-md-8.col-md-offset-1
+            a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+              i(class="icon {{ content.banner.call_to_action.icon }}")
+              | {{ content.banner.call_to_action.text }}
+
+        .col-md-5
+          .parallax-image
+            p.left.white-text *Este vídeo não contém áudio
+            iframe(width="120%" height="315" ng-src="{{ escapeVideo(content.banner.video) }}" frameborder="0" allowfullscreen)
+
+
+
+  // features/samples
+  .section.section-features
+    .container
+      h4.header-text.text-center {{ content.showroom.title }}
+      h5.subtitle.text-center {{ content.showroom.subtitle }}
+      .row
+        .col-md-4(ng-repeat="sample in content.showroom.samples")
+          div(class="card card-{{ sample.color }}")
+            .icon
+              i(class=" {{ sample.icon }} ")
+            .text
+              h4 {{ sample.title }}
+              p(ng-bind-html="escapeHTML(sample.description)")
+            .hide-on-med-and-up.small_margin_top
+              a(class="col-md-12 btn btn-{{ sample.call_to_action.color }}" data-toggle="modal" data-target="#loginModal")
+                i(class="icon {{ sample.call_to_action.icon }}")
+                | {{ sample.call_to_action.text }}
+      .row.hide-on-small-only
+        .call_to_action.col-md-6.col-md-offset-3
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+            i(class="icon {{ content.showroom.call_to_action.icon }}")
+            | {{ content.showroom.call_to_action.text }}
+
+
+  // partners or customer brand
+  .section.section-gray.section-clients
+    .container.text-center
+      h4.header-text {{ content.partners.title }}
+      p {{ content.partners.description }}
+
+      .logos
+        ul.list-unstyled.margin_bottom
+          li(ng-repeat="brand in content.partners.brands")
+            img(ng-src="images/brands/{{ brand }}")
+
+
+
+
+  // objections treatments
+  .section.section-presentation
+    #objections.container
+      .row
+        h4.header-text.text-center {{ content.objections.title }}
+        h5.subtitle.text-center {{ content.objections.subtitle }}
+      #comparison.margin_top
+        .row
+          .col-md-5.text-center: h5.grey-text {{ content.objections.comparison.competitorName }}
+          .col-md-2.text-center: h5 vs
+          .col-md-5.text-center: h5 {{ content.objections.comparison.ourName }}
+
+        //.row(ng-repeat="point in content.objections.comparison.points")
+        //  .col-md-5 {{ point.competitor }}
+        //  .col-md-2.text-center x
+        //  .col-md-5 {{ point.us }}
+
+        .row.comparative(ng-repeat="point in content.objections.comparison.points")
+          .col-md-5 {{ point.competitor }}
+          .col-md-2.text-center vs
+          .col-md-5 {{ point.us }}
+      .row.margin_top
+        .call_to_action.col-md-6.col-md-offset-3
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+            i(class="{{ content.guest_post.call_to_action.icon }}")
+            | {{ content.guest_post.call_to_action.text }}
+
+
+
+  // guest post
+  .guest_post.section.section-presentation
+    .container
+      h4.header-text.text-center {{ content.guest_post.title }}
+      .row(ng-repeat="guest in content.guest_post.guests")
+        .col-md-6
+          .description
+            h4.header-text {{ guest.name }}
+            h5.subtitle {{ guest.role }}
+            p.justify {{ guest.summary }}
+        .col-md-6
+          .description
+            iframe(width="100%" height="300" ng-src="{{ escapeVideo(guest.video) }}" frameborder="0" allowfullscreen)
+
+      .row
+        .call_to_action.col-md-6.col-md-offset-3
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+            i(class="{{ content.guest_post.call_to_action.icon }}")
+            | {{ content.guest_post.call_to_action.text }}
+
+
+
+  // customer social proof
+  .customer_posts.section.section-features
+    .container
+      .row
+        h4.header-text.text-center {{ content.social_proof.title }}
+        .col-md-12
+          .fb-comments(data-href="{{ domain_url }}" data-width="100%" data-numposts="3")
+
+
+  // modals
+  .container
+    // register modal
+    #loginModal.modal.fade.login
+      .modal-dialog.login.animated
+        .modal-content
+          .modal-header
+            button.close(type="button" data-dismiss="modal" aria-hidden="true") &times;
+            h4.modal-title Acesse com
+          .modal-body
+            .box
+              .content
+                .social
+                  a#google_login.circle.google(href="#")
+                    i.fa.fa-google-plus.fa-fw
+                  a#facebook_login.circle.facebook(href="#")
+                    i.fa.fa-facebook.fa-fw
+                .line
+                  .left
+                  span OU
+                  .right
+                .error
+                .form.loginBox(style="display: none;")
+                  form(method action acept-charset="ISO8859-1")
+                    input.form-control(type="text" placeholder="E-mail" name="email")
+                    input.form-control(type="text" placeholder="Senha" name="password")
+                    input.btn.btn-info.btn-login(type="button" value="login")
+            .box
+              .content.registerBox(style="display: block")
+                .form
+                  form(method action acept-charset="ISO8859-1")
+                    input.form-control(type="text" placeholder="Celular com DDD (whatsapp)" name="phone")
+                    input.form-control(type="text" placeholder="E-mail" name="email")
+                    input.form-control(type="password" placeholder="Senha" name="password")
+                    input.form-control(type="password" placeholder="Confirmar Senha" name="confirm_password")
+                    input(class="btn btn-default btn-register" type="button" value="Create account" name="commit")
+          .modal-footer
+            .forgot.login-footer(style="display: none;")
+              span
+                | Quero
+                a(href="javascript: showRegisterForm();") &nbsp;criar minha conta
+            .forgot.register-footer(style="display: block;")
+              span Quero
+              a(href="javascript: showLoginForm();") &nbsp;acessar minha conta
+
+
+    // called when the user leave the window using mouse
+    #leave_modal.modal.fade
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type="button" data-dismiss="modal" aria-label="Close"): span(aria-hidden="true") &times;
+            h4#LeaveLabel.modal-title Modal title
+          .modal-body ...
+          .modal-footer
+            button.btn.btn-fill.btn-default(type="button" data-dismiss="modal") Close
+            button.btn.btn-fill.btn-info(type="button") Save changes
