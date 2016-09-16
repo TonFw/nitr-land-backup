@@ -6,7 +6,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
         .logo-container
           h2.brand-font-icon
             i(class="icon {{ content.brand.icon }}")
-            | {{ content.brand.name }}
+            span(ng-bind-html="escapeHTML(content.brand.name)")
 
 
 // Content
@@ -89,10 +89,15 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
       p {{ content.partners.description }}
 
       .logos
-        ul.list-unstyled.margin_bottom
+        ul.list-unstyled
           li(ng-repeat="brand in content.partners.brands")
             img(ng-src="images/brands/{{ brand }}")
 
+      .row.hide-on-small-only
+        .call_to_action.col-md-6.col-md-offset-3
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+            i(class="icon {{ content.partners.call_to_action.icon }}")
+            | {{ content.partners.call_to_action.text }}
 
 
 
@@ -120,8 +125,8 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
       .row.margin_top
         .call_to_action.col-md-6.col-md-offset-3
           a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
-            i(class="{{ content.guest_post.call_to_action.icon }}")
-            | {{ content.guest_post.call_to_action.text }}
+            i(class="icon {{ content.objections.call_to_action.icon }}")
+            | {{ content.objections.call_to_action.text }}
 
 
 

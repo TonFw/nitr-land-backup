@@ -1,15 +1,16 @@
 content = {
   brand: {
-    name: 'NITRO START',
+    name: '<i>NITRO START</i>',
     icon: 'icon-nitrostart'
   },
   banner: {
     main_value: 'Seu app a partir de R$ 5mil',
     second_value: 'Triplique a chance de receber investimento',
-    video: 'https://www.youtube.com/embed/-Af7M1O3o0A',
+    video: 'https://www.youtube.com/embed/iNvOFxbBICs',
     bullets: [
       'Seu app em apenas 2 semanas',
       'Aumente suas chances de receber investimento',
+      'Graças à alta chance de investimento, fornecemos o capital inicial a juros BAIXÍSSIMOS',
       'Seu app para validar com seus amigos e família'
     ],
     call_to_action: {
@@ -74,37 +75,48 @@ content = {
   partners: {
     title: 'Instituições Parceiras',
     description: 'As principais instituições de fomento e investimentos à startups estão conosco. Anjos do Brasil (maior rede de investidores anjos da américa latina), Criatec (maior fundo de investimentos do centro-oeste), ASTEPS (Segunda maior associação de startups do Brasil).',
+    call_to_action: {
+      icon: 'ion-link',
+      text: 'Conecte-me à sua rede'
+    },
     brands: [
-      'p1.png',
-      'p2.png',
-      'p3.png'
+      'anj.png',
+      'cri.png',
+      'ast.png'
     ]
   },
 
   objections: {
     title: 'Além de mais barato somos melhores',
     subtitle: 'Somente com a NITRO START você alcançará seus mais altos objetivos, chega de alcançar metas mediocres',
-
+    call_to_action: {
+      icon: 'fa fa-unlink',
+      text: 'Liberte-me das fábricas'
+    },
     // COMPLEMENTARY to the existing solution || UNIQUELY different
     comparison: {
       ourName: 'NITRO START',
       competitorName: 'Outras fábricas de app',
       points: [
         {
-          competitor: 'Their disadvantage',
-          us: 'Our advantage'
+          competitor: 'Querem empurrar funcionalidades',
+          us: 'Queremos fazer sua principal funcionalidade'
         },
         {
-          competitor: 'Their disadvantage',
-          us: 'Our advantage'
+          competitor: 'Querem cobrar por tudo',
+          us: 'O que for padrão é GRÁTIS'
         },
         {
-          competitor: 'Você recebe a melhor negociação no mesmo dia. Total comodidade e agilidade',
-          us: 'Você recebe a melhor negociação no mesmo dia. Total comodidade e agilidade'
+          competitor: 'Não te ajudam nos próximos passos: vendas, constituição da empresa...',
+          us: 'Temos um arcevo de serviços pós-app para te levar aos milhões'
         },
         {
-          competitor: 'Você recebe a melhor negociação no mesmo dia. Total comodidade e agilidade',
-          us: 'Você recebe a melhor negociação no mesmo dia. Total comodidade e agilidade'
+          competitor: 'Você é o único investidor',
+          us: 'Te levamos à nossa rede de investidores e com baixo custo adicional você recebe assessoria'
+        },
+        {
+          competitor: 'Você corre todos os riscos sozinho',
+          us: 'Se você não tem o capital inicial, fazemos correpondência bancária com juros BAIXÍSSIMO'
         }
       ]
     },
