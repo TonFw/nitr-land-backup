@@ -21,7 +21,7 @@ content = {
 
   showroom: {
     title: 'Um app bilionário para chamar de seu',
-    subtitle: 'Que app eu posso fazer com 5 mil em 2 semanas?',
+    subtitle: 'Que app eu posso fazer com apenas 5mil e 2 semanas?',
     call_to_action: {
       icon: 'ion-ios-play',
       text: 'começar meu app bilionário'
@@ -74,7 +74,7 @@ content = {
 
   partners: {
     title: 'Instituições Parceiras',
-    description: 'As principais instituições de fomento e investimentos à startups estão conosco. Anjos do Brasil (maior rede de investidores anjos da américa latina), Criatec (maior fundo de investimentos do centro-oeste), ASTEPS (Segunda maior associação de startups do Brasil).',
+    description: 'As principais instituições de fomento e investimentos às startups estão conosco. Anjos do Brasil (maior rede de investidores anjos da américa latina), Criatec (maior fundo de investimentos do centro-oeste), ASTEPS (Segunda maior associação de startups do Brasil).',
     call_to_action: {
       icon: 'ion-link',
       text: 'Conecte-me à sua rede'
@@ -143,7 +143,7 @@ content = {
                   ' Nenhum investidor profissional entra no estágio da ideia. ' +
                   'A fase ideal para receber investimento é quando está dando os primeiros passos para vender seu produto.' +
                   ' O investidor lhe ajudará com dinheiro e experiência.',
-        video: 'https://www.youtube.com/embed/e6J10EHbN6Q?list=PLjIhqe5hH3aRUXAGtrq2qj3qpmjHUtumW'
+        video: 'https://www.youtube.com/embed/e6J10EHbN6Q'
       }
     ]
   },
