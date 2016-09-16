@@ -86,10 +86,12 @@ input[type="password"] {
 }
 
 .btn-warning.btn-fill {
+  border: none !important;
   background: #ff850c !important;
 }
 
 .btn-warning.btn-fill:hover {
+  border: none !important;
   background: #ff9700 !important;
 }
 

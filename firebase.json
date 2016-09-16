@@ -4,6 +4,16 @@
   },
   "hosting": {
     "public": "public",
+    "ignore": [
+      "**/.tmp/**",
+      "**/bower_components/**",
+      "**/pug/**",
+      "**/src/**",
+      "**/test/**",
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
     "rewrites": [
       {
         "source": "**",
