@@ -10,7 +10,7 @@ content = {
     bullets: [
       'Seu app em apenas 2 semanas',
       'Aumente suas chances de receber investimento',
-      'Graças à alta chance de investimento, fornecemos o capital inicial a juros BAIXÍSSIMOS',
+      'Graças à alta chance de investimento, fornecemos o capital a juros BAIXÍSSIMOS e a LONGO PRAZO de carência',
       'Seu app para validar com seus amigos e família'
     ],
     call_to_action: {

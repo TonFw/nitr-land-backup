@@ -9,6 +9,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             span(ng-bind-html="escapeHTML(content.brand.name)")
 
 
+
 // Content
 .wrapper
   // banner section
@@ -82,6 +83,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             | {{ content.showroom.call_to_action.text }}
 
 
+
   // partners or customer brand
   .section.section-gray.section-clients
     .container.text-center
@@ -139,6 +141,22 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
           .fb-comments(data-href="{{ domain_url }}" data-width="100%" data-numposts="3")
 
 
+
+  //// footer with company info
+  //footer.footer
+  //  .container
+  //    nav.pull-left
+  //      ul
+  //        li: a(href="#") Home
+  //        li: a(href="#") Contato
+  //        li: a(href="#") Portfólio
+  //    .social-area.pull-right
+  //      a.btn.btn-social.btn-facebook.btn-simple: i.fa.fa-facebook-square
+  //      a.btn.btn-social.btn-twitter.btn-simple: i.fa.fa-twitter
+  //      a.btn.btn-social.btn-whatsapp.btn-simple.teal-text: i.fa.fa-whatsapp
+
+
+
   // modals
   .container
     // register modal
@@ -152,10 +170,10 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             .box
               .content
                 .social
-                  a#google_login.circle.google(href="#")
-                    i.fa.fa-google-plus.fa-fw
                   a#facebook_login.circle.facebook(href="#")
                     i.fa.fa-facebook.fa-fw
+                  a#google_login.circle.google(href="#")
+                    i.fa.fa-google-plus.fa-fw
                 .line
                   .left
                   span OU
@@ -165,7 +183,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
                   form(method action acept-charset="ISO8859-1")
                     input.form-control(type="text" placeholder="E-mail" name="email")
                     input.form-control(type="text" placeholder="Senha" name="password")
-                    input.btn.btn-info.btn-login(type="button" value="login")
+                    input.btn.btn-info.btn-login(type="button" value="entrar")
             .box
               .content.registerBox(style="display: block")
                 .form
@@ -174,7 +192,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
                     input.form-control(type="text" placeholder="E-mail" name="email")
                     input.form-control(type="password" placeholder="Senha" name="password")
                     input.form-control(type="password" placeholder="Confirmar Senha" name="confirm_password")
-                    input(class="btn btn-default btn-register" type="button" value="Create account" name="commit")
+                    input(class="btn btn-default btn-register" type="button" value="Criar conta" name="commit")
           .modal-footer
             .forgot.login-footer(style="display: none;")
               span
@@ -183,6 +201,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             .forgot.register-footer(style="display: block;")
               span Quero
               a(href="javascript: showLoginForm();") &nbsp;acessar minha conta
+
 
 
     // called when the user leave the window using mouse
