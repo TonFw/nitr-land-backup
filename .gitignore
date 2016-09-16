@@ -4,5 +4,3 @@ public
 .sass-cache
 node_modules
 bower_components
-src/scripts/content.js
-src/scripts/settings.js

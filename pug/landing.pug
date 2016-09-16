@@ -36,6 +36,28 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
 
 
 
+  // guest post
+  .guest_post.section.section-presentation
+    .container
+      h4.header-text.text-center {{ content.guest_post.title }}
+      .row(ng-repeat="guest in content.guest_post.guests")
+        .col-md-6
+          .description
+            h4.header-text {{ guest.name }}
+            h5.subtitle {{ guest.role }}
+            p.justify {{ guest.summary }}
+        .col-md-6
+          .description
+            iframe(width="100%" height="300" ng-src="{{ escapeVideo(guest.video) }}" frameborder="0" allowfullscreen)
+
+      .row
+        .call_to_action.col-md-6.col-md-offset-3
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+            i(class="icon {{ content.guest_post.call_to_action.icon }}")
+            | {{ content.guest_post.call_to_action.text }}
+
+
+
   // features/samples
   .section.section-features
     .container
@@ -96,28 +118,6 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
           .col-md-2.text-center vs
           .col-md-5 {{ point.us }}
       .row.margin_top
-        .call_to_action.col-md-6.col-md-offset-3
-          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
-            i(class="{{ content.guest_post.call_to_action.icon }}")
-            | {{ content.guest_post.call_to_action.text }}
-
-
-
-  // guest post
-  .guest_post.section.section-presentation
-    .container
-      h4.header-text.text-center {{ content.guest_post.title }}
-      .row(ng-repeat="guest in content.guest_post.guests")
-        .col-md-6
-          .description
-            h4.header-text {{ guest.name }}
-            h5.subtitle {{ guest.role }}
-            p.justify {{ guest.summary }}
-        .col-md-6
-          .description
-            iframe(width="100%" height="300" ng-src="{{ escapeVideo(guest.video) }}" frameborder="0" allowfullscreen)
-
-      .row
         .call_to_action.col-md-6.col-md-offset-3
           a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
             i(class="{{ content.guest_post.call_to_action.icon }}")
