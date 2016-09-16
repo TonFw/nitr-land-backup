@@ -6,7 +6,7 @@ content = {
   banner: {
     main_value: 'Seu app a partir de R$ 5mil',
     second_value: 'Triplique sua chance de receber investimento',
-    video: 'https://www.youtube.com/embed/iNvOFxbBICs',
+    video: 'https://www.youtube.com/embed/phh6Z818zyk',
     bullets: [
       'Seu app em apenas 2 semanas',
       'Aumente suas chances de receber investimento',
