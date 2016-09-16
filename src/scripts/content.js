@@ -5,7 +5,7 @@ content = {
   },
   banner: {
     main_value: 'Seu app a partir de R$ 5mil',
-    second_value: 'Triplique a chance de receber investimento',
+    second_value: 'Triplique sua chance de receber investimento',
     video: 'https://www.youtube.com/embed/iNvOFxbBICs',
     bullets: [
       'Seu app em apenas 2 semanas',
@@ -104,7 +104,7 @@ content = {
         },
         {
           competitor: 'Querem cobrar por tudo',
-          us: 'O que for padrão é GRÁTIS'
+          us: 'Conosco o que for padrão é GRÁTIS'
         },
         {
           competitor: 'Não te ajudam nos próximos passos: vendas, constituição da empresa...',
@@ -133,7 +133,7 @@ content = {
     title: 'o que os investidores estão buscando',
     call_to_action: {
       icon: 'icon-nitrostart',
-      text: 'ME LEVE A ESTE ESTÁGIO'
+      text: 'LEVE-ME A ESTE ESTÁGIO'
     },
     guests: [
       {

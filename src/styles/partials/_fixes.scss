@@ -114,3 +114,9 @@ input[type="password"] {
 footer.footer {
   border-top: 1px solid whitesmoke;
 }
+
+.parallax {
+  iframe {
+    width: 120% !important;
+  }
+}

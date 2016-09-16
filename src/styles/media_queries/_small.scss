@@ -1,0 +1,48 @@
+@media only screen and (max-width : 767px) {
+  ul {
+    li {
+      margin: 10px 0 !important;
+      text-align: left !important;
+    }
+  }
+
+  .parallax.filter-gradient {
+    .container {
+      margin-left: -12px !important;
+    }
+  }
+
+  .landing-page .parallax .parallax-image.video {
+    left: -10px !important;
+    margin-top: 20px !important;
+  }
+
+  .landing-page .parallax {
+    height: 1200px !important;
+  }
+
+  .parallax {
+    iframe {
+      width: 100% !important;
+      margin-bottom: 30px !important;
+    }
+
+    .call_to_action {
+      a {
+        margin-left: -12px;
+      }
+    }
+  }
+
+  #comparison {
+    .col-md-2 {
+      margin: 15px 0;
+    }
+  }
+
+  .section-clients {
+    ul li {
+      text-align: center !important;
+    }
+  }
+}

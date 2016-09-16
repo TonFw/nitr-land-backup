@@ -25,16 +25,20 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             h5
               ul
                 li(ng-repeat="bullet in content.banner.bullets") {{ bullet }}
-          .call_to_action.col-md-8.col-md-offset-1
+          .call_to_action.col-md-8.col-md-offset-1.hide-on-small-only
             a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
               i(class="icon {{ content.banner.call_to_action.icon }}")
               | {{ content.banner.call_to_action.text }}
 
-        .col-md-5
-          .parallax-image
+        .col-md-5.col-xs-offset-1.col-xs-11.col-sm-offset-2.col-sm-8
+          .parallax-image.video
             p.left.white-text *Este vídeo não contém áudio
-            iframe(width="120%" height="315" ng-src="{{ escapeVideo(content.banner.video) }}" frameborder="0" allowfullscreen)
+            iframe(height="315" ng-src="{{ escapeVideo(content.banner.video) }}" frameborder="0" allowfullscreen)
 
+        .call_to_action.col-xs-offset-1.col-xs-11.col-sm-offset-2.col-sm-12.hide-on-med-and-up
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+            i(class="icon {{ content.banner.call_to_action.icon }}")
+            | {{ content.banner.call_to_action.text }}
 
 
   // guest post
