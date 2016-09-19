@@ -1,17 +1,25 @@
 content = {
+  head: {
+    title: '',
+    description: '',
+    'application-name': '',
+    'apple-mobile-web-app-title': ''
+  },
   brand: {
     name: '<i>NITRO START</i>',
     icon: 'icon-nitrostart'
   },
   banner: {
     main_value: 'Seu app a partir de R$ 5mil',
-    second_value: 'Triplique sua chance de receber investimento',
-    video: 'https://www.youtube.com/embed/phh6Z818zyk',
+    second_value: 'Com app em mãos tudo fica bem mais fácil',
+    video: 'https://www.youtube.com/embed/-Af7M1O3o0A',
     bullets: [
-      'Seu app em apenas 2 semanas',
       'Aumente suas chances de receber investimento',
-      'Graças à alta chance de investimento, fornecemos o capital a juros BAIXÍSSIMOS e a LONGO PRAZO de carência',
-      'Seu app para validar com seus amigos e família'
+      'Seu app entregue em até 2 semanas',
+      'Valide sua maravilhosa ideia com seus amigos e família',
+      'Consiga ótimos sócios com bem menos esforço',
+      // 'Graças à alta chance de investimento, fornecemos o capital a juros BAIXÍSSIMOS e a LONGO PRAZO de carência',
+      'Sinta-se mais seguro para investir mais em seu projeto'
     ],
     call_to_action: {
       icon: 'ion-cash',
@@ -20,8 +28,8 @@ content = {
   },
 
   showroom: {
-    title: 'Um app bilionário para chamar de seu',
-    subtitle: 'Que app eu posso fazer com apenas 5mil e 2 semanas?',
+    title: 'Negócios bilionários que poderiam ter sido seu',
+    subtitle: 'Sim, com apenas 5mil e em 2 semanas',
     call_to_action: {
       icon: 'ion-ios-play',
       text: 'começar meu app bilionário'
@@ -73,8 +81,8 @@ content = {
   },
 
   partners: {
-    title: 'Instituições Parceiras',
-    description: 'As principais instituições de fomento e investimentos às startups estão conosco. Anjos do Brasil (maior rede de investidores anjos da américa latina), Criatec (maior fundo de investimentos do centro-oeste), ASTEPS (Segunda maior associação de startups do Brasil).',
+    title: 'Conectamos você aos melhores investidores',
+    description: 'Anjos do Brasil (maior rede de investidores anjos da américa latina <strong class="teal-text text-lighten-2">R$ 784 milhões</strong>), Criatec (fundo de investimentos BNDES <strong class="teal-text text-lighten-2">R$ 200 milhões</strong>), CedroCapital (maior fundo do centro-oeste <strong class="teal-text text-lighten-2">R$ 50 milhões</strong>).',
     call_to_action: {
       icon: 'ion-link',
       text: 'Conecte-me à sua rede'
@@ -82,13 +90,12 @@ content = {
     brands: [
       'anj.png',
       'cri.png',
-      'ast.png'
+      'cc.png'
     ]
   },
 
   objections: {
-    title: 'Além de mais barato somos melhores',
-    subtitle: 'Somente com a NITRO START você alcançará seus mais altos objetivos, chega de alcançar metas mediocres',
+    title: 'porquê somos mais baratos e bem melhores',
     call_to_action: {
       icon: 'fa fa-unlink',
       text: 'Liberte-me das fábricas'
@@ -96,27 +103,23 @@ content = {
     // COMPLEMENTARY to the existing solution || UNIQUELY different
     comparison: {
       ourName: 'NITRO START',
-      competitorName: 'Outras fábricas de app',
+      competitorName: 'Outras empresas de aplicativos',
       points: [
         {
           competitor: 'Querem empurrar funcionalidades',
           us: 'Queremos fazer sua principal funcionalidade'
         },
         {
-          competitor: 'Querem cobrar por tudo',
-          us: 'Conosco o que for padrão é GRÁTIS'
+          competitor: 'Cobram por qualquer coisa a ser feita',
+          us: 'GRÁTIS diversas funções padrões'
         },
         {
-          competitor: 'Não te ajudam nos próximos passos: vendas, constituição da empresa...',
-          us: 'Temos um arcevo de serviços pós-app para te levar aos milhões'
+          competitor: 'Não te ajudam nos próximos passos',
+          us: 'Estamos prontos para caminhar todos passos para te levar ao milhões'
         },
         {
-          competitor: 'Você é o único investidor',
-          us: 'Te levamos à nossa rede de investidores e com baixo custo adicional você recebe assessoria'
-        },
-        {
-          competitor: 'Você corre todos os riscos sozinho',
-          us: 'Se você não tem o capital inicial, fazemos correpondência bancária com juros BAIXÍSSIMO'
+          competitor: 'Não vão te conectar a investidores',
+          us: 'Te conectamos aos melhores investidores'
         }
       ]
     },
@@ -130,7 +133,7 @@ content = {
   },
 
   guest_post: {
-    title: 'o que os investidores estão buscando',
+    title: 'sem pp você não receberá investimento',
     call_to_action: {
       icon: 'icon-nitrostart',
       text: 'LEVE-ME A ESTE ESTÁGIO'
@@ -138,17 +141,22 @@ content = {
     guests: [
       {
         name: 'Cassio Spina',
-        role: 'Investidor Anjo e fundador da Anjos do Brasil',
-        summary: 'Somente após atingir o estágio de Protótipo você terá chances reais de conseguir investimento de anjos.' +
-                  ' Nenhum investidor profissional entra no estágio da ideia. ' +
-                  'A fase ideal para receber investimento é quando está dando os primeiros passos para vender seu produto.' +
-                  ' O investidor lhe ajudará com dinheiro e experiência.',
+        role: 'Autor de diversos Livros, Investidor Anjo Profissional e fundador/presidente da Anjos do Brasil',
+        summary: 'Nenhum investidor entra no estágio da ideia. Somente com o Protótipo pronto você terá chances de conseguir investimento',
+        // summary: 'Somente após atingir o estágio de Protótipo você terá chances reais de conseguir investimento de anjos.' +
+        //           ' Nenhum investidor profissional entra no estágio da ideia. ' +
+        //           'A fase ideal para receber investimento é quando está dando os primeiros passos para vender seu produto.' +
+        //           ' O investidor lhe ajudará com dinheiro e experiência.',
         video: 'https://www.youtube.com/embed/e6J10EHbN6Q'
       }
     ]
   },
 
   social_proof: {
-    title: 'e com a palavra, os consumidores'
+    title: 'veja o que os nossos futuros milionários estão falando',
+    call_to_action: {
+      icon: 'ion-person-add',
+      text: 'Quero ser o próximo milionário'
+    }
   }
 };

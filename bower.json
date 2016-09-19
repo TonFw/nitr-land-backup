@@ -7,7 +7,7 @@
     "angular-animate": "1.5.8",
     "angular-sanitize": "1.5.8",
     "angular-ui-router": "0.2.13",
-    "ActionTive": "^0.0.13",
+    "ActionTive": "^0.0.16",
     "Ionicons": "ionicons#^2.0.1"
   },
   "devDependencies": {

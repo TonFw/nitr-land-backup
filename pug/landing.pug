@@ -50,7 +50,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
           .description
             h4.header-text {{ guest.name }}
             h5.subtitle {{ guest.role }}
-            p.justify {{ guest.summary }}
+            blockquote: p(ng-bind-html) {{ guest.summary }}
         .col-md-6
           .description
             iframe(width="100%" height="300" ng-src="{{ escapeVideo(guest.video) }}" frameborder="0" allowfullscreen)
@@ -92,7 +92,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
   .section.section-gray.section-clients
     .container.text-center
       h4.header-text {{ content.partners.title }}
-      p {{ content.partners.description }}
+      p(ng-bind-html="escapeHTML(content.partners.description)")
 
       .logos
         ul.list-unstyled
@@ -143,7 +143,11 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
         h4.header-text.text-center {{ content.social_proof.title }}
         .col-md-12
           .fb-comments(data-href="{{ domain_url }}" data-width="100%" data-numposts="3")
-
+      .row.margin_top
+        .call_to_action.col-md-6.col-md-offset-3
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+            i(class="icon {{ content.social_proof.call_to_action.icon }}")
+            | {{ content.social_proof.call_to_action.text }}
 
 
   //// footer with company info
