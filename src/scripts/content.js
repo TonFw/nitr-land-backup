@@ -15,7 +15,7 @@ content = {
     video: 'https://www.youtube.com/embed/-Af7M1O3o0A',
     bullets: [
       'Aumente suas chances de receber investimento',
-      'Seu app entregue em até 2 semanas',
+      'Seu aplicativo entregue em até 1 mês',
       'Valide sua maravilhosa ideia com seus amigos e família',
       'Consiga ótimos sócios com bem menos esforço',
       // 'Graças à alta chance de investimento, fornecemos o capital a juros BAIXÍSSIMOS e a LONGO PRAZO de carência',
@@ -29,7 +29,7 @@ content = {
 
   showroom: {
     title: 'Negócios bilionários que poderiam ter sido seu',
-    subtitle: 'Sim, com apenas 5mil e em 2 semanas',
+    subtitle: 'Sim, com apenas R$ 5mil e em até 1 mês',
     call_to_action: {
       icon: 'ion-ios-play',
       text: 'começar meu app bilionário'
@@ -150,6 +150,10 @@ content = {
         video: 'https://www.youtube.com/embed/e6J10EHbN6Q'
       }
     ]
+  },
+
+  register: {
+      
   },
 
   social_proof: {

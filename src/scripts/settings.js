@@ -1,5 +1,5 @@
 // Settings Variables
-domain_url = 'https://actionholding.com.br';
+domain_url = 'https://nitrostart.com.br';
 
 // Server Connection
 firebase_app_id = 'nitrolanding-28802';

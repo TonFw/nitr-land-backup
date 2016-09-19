@@ -26,7 +26,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
               ul
                 li(ng-repeat="bullet in content.banner.bullets") {{ bullet }}
           .call_to_action.col-md-8.col-md-offset-1.hide-on-small-only
-            a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+            a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
               i(class="icon {{ content.banner.call_to_action.icon }}")
               | {{ content.banner.call_to_action.text }}
 
@@ -36,7 +36,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             iframe(height="315" ng-src="{{ escapeVideo(content.banner.video) }}" frameborder="0" allowfullscreen)
 
         .call_to_action.col-xs-offset-1.col-xs-11.col-sm-offset-2.col-sm-12.hide-on-med-and-up
-          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
             i(class="icon {{ content.banner.call_to_action.icon }}")
             | {{ content.banner.call_to_action.text }}
 
@@ -57,7 +57,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
 
       .row
         .call_to_action.col-md-6.col-md-offset-3
-          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
             i(class="icon {{ content.guest_post.call_to_action.icon }}")
             | {{ content.guest_post.call_to_action.text }}
 
@@ -77,12 +77,12 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
               h4 {{ sample.title }}
               p(ng-bind-html="escapeHTML(sample.description)")
             .hide-on-med-and-up.small_margin_top
-              a(class="col-md-12 btn btn-{{ sample.call_to_action.color }}" data-toggle="modal" data-target="#loginModal")
+              a(class="col-md-12 btn btn-{{ sample.call_to_action.color }}" ui-sref="register")
                 i(class="icon {{ sample.call_to_action.icon }}")
                 | {{ sample.call_to_action.text }}
       .row.hide-on-small-only
         .call_to_action.col-md-6.col-md-offset-3
-          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
             i(class="icon {{ content.showroom.call_to_action.icon }}")
             | {{ content.showroom.call_to_action.text }}
 
@@ -101,7 +101,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
 
       .row.hide-on-small-only
         .call_to_action.col-md-6.col-md-offset-3
-          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
             i(class="icon {{ content.partners.call_to_action.icon }}")
             | {{ content.partners.call_to_action.text }}
 
@@ -130,7 +130,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
           .col-md-5 {{ point.us }}
       .row.margin_top
         .call_to_action.col-md-6.col-md-offset-3
-          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
             i(class="icon {{ content.objections.call_to_action.icon }}")
             | {{ content.objections.call_to_action.text }}
 
@@ -145,7 +145,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
           .fb-comments(data-href="{{ domain_url }}" data-width="100%" data-numposts="3")
       .row.margin_top
         .call_to_action.col-md-6.col-md-offset-3
-          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" data-toggle="modal" data-target="#loginModal")
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
             i(class="icon {{ content.social_proof.call_to_action.icon }}")
             | {{ content.social_proof.call_to_action.text }}
 

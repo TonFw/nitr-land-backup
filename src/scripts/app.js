@@ -15,6 +15,11 @@ angular.module('FireLanding', ['ui.router', 'FireLanding.controllers'])
       url: '/',
       templateUrl: 'views/landing.html',
       controller: 'LandingCtrl'
+    })
+    .state('register', {
+      url: '/register',
+      templateUrl: 'views/register.html',
+      controller: 'RegisterCtrl'
     });
 
     // if none of the above states are matched, use this as the fallback
