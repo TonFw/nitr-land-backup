@@ -12,13 +12,17 @@
     }
   }
 
+  .call_to_action.hide-on-med-and-up {
+
+  }
+
   .landing-page .parallax .parallax-image.video {
-    left: 22px !important;
+    left: -28px !important;
     margin-top: 20px !important;
   }
 
   .landing-page .parallax {
-    height: 1200px !important;
+    height: 1360px !important;
   }
 
   .parallax {
@@ -44,5 +48,11 @@
     ul li {
       text-align: center !important;
     }
+  }
+
+  a.btn {
+    left: -10px !important;
+    white-space: normal;
+    max-width: 100% !important;
   }
 }
