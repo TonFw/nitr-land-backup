@@ -1,9 +1,9 @@
 content = {
   head: {
-    title: '',
-    description: '',
-    'application-name': '',
-    'apple-mobile-web-app-title': ''
+    title: 'Seu app a partir de R$ 5mil',
+    description: 'Com app em mãos tudo fica bem mais fácil: investimentos, sócios, clientes, validação e etc',
+    'application-name': 'NITRO START',
+    'apple-mobile-web-app-title': 'NITRO START'
   },
   brand: {
     name: '<i>NITRO START</i>',
