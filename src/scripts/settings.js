@@ -1,10 +1,6 @@
 // Settings Variables
 domain_url = 'https://nitrostart.com.br';
 
-// Server Connection
-firebase_app_id = 'nitrolanding-28802';
-fire_base_server = firebase_app_id + 'firebaseio.com';
-
 // Social Connections
 facebook_app_id = '1691426611079180';
 
@@ -13,3 +9,15 @@ visual_identity = {
   btn: 'warning',
   color: 'orange' // blue, green, light-green, orange, black
 };
+
+// Server Connection
+firebase_config = {
+  apiKey: "AIzaSyBoCCevjt6-GTdQ0F5COjJ4TKvqwGTcmw0",
+  authDomain: "nitrolanding-28802.firebaseapp.com",
+  databaseURL: "https://nitrolanding-28802.firebaseio.com",
+  storageBucket: "nitrolanding-28802.appspot.com",
+  messagingSenderId: "1054860110467"
+};
+
+// Server initialize
+firebase.initializeApp(firebase_config);

@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular.module('FireLanding', ['ui.router', 'FireLanding.controllers'])
+angular.module('FireLanding', ['ui.router', 'FireLanding.controllers', 'firebase'])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('landing', {

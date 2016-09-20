@@ -11,10 +11,4 @@ angular.module('FireLanding.controllers', [])
     $scope.escapeVideo = function(video) {
       return $sce.trustAsResourceUrl(video);
     };
-  })
-
-
-  .controller('RegisterCtrl', function($scope) {
-    $scope.content = content;
-    $scope.visual_identity = visual_identity;
   });

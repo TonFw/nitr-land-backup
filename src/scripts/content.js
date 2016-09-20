@@ -97,7 +97,7 @@ content = {
   objections: {
     title: 'porquê somos mais baratos e bem melhores',
     call_to_action: {
-      icon: 'fa fa-unlink',
+      icon: 'icon icon-unlink',
       text: 'Liberte-me das fábricas'
     },
     // COMPLEMENTARY to the existing solution || UNIQUELY different
@@ -153,7 +153,7 @@ content = {
   },
 
   register: {
-      
+
   },
 
   social_proof: {

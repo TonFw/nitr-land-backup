@@ -1,5 +1,6 @@
 // Import bower Libs
 @import "../../bower_components/Ionicons/scss/ionicons";
+@import "../../bower_components/font-awesome/scss/font-awesome";
 @import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
 @import "../../bower_components/ActionTive/landing_awesome/assets/css/landing-page.css";
 
@@ -11,6 +12,7 @@
 // My Style files
 @import "./partials/brand";
 @import "./partials/fixes";
+@import "./partials/register";
 
 // My Style media queries files
 @import "./media_queries/small";
