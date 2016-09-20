@@ -205,3 +205,17 @@ blockquote p {
     margin-bottom: 20px !important;
   }
 }
+
+ul.check-list {
+  list-style: none !important;
+
+  li:before {
+    content: "\f121";
+    margin-right: 10px;
+    font-family: "Ionicons";
+  }
+}
+
+.click_call {
+  position: absolute !important;
+}

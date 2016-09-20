@@ -4,20 +4,21 @@ content = {
     icon: 'icon-nitrostart'
   },
   banner: {
-    main_value: 'Receba R$ 208 mil em investimento com apenas 5 mil',
+    main_value: 'Receba R$ 208 mil em investimento com apenas 5 mil reais',
     second_value: '',
     video: 'https://www.youtube.com/embed/-Af7M1O3o0A',
     bullets: [
       'Aumente suas chances de receber investimento',
-      'Seu aplicativo entregue em até 1 mês',
+      'Seu aplicativo pré-operacional entregue em até 1 mês',
       'Valide sua maravilhosa ideia com seus amigos e família',
       'Consiga ótimos sócios com bem menos esforço',
       // 'Graças à alta chance de investimento, fornecemos o capital a juros BAIXÍSSIMOS e a LONGO PRAZO de carência',
       'Sinta-se mais seguro para investir mais em seu projeto'
     ],
+    extra: 'GRÁTIS assessoria de Marketing',
     call_to_action: {
       icon: 'ion-cash',
-      text: 'Quero meu investimento de 208 mil agora'
+      text: 'Quero receber meu investimento agora'
     }
   },
 
@@ -92,8 +93,8 @@ content = {
   objections: {
     title: 'porquê somos mais baratos e bem melhores',
     call_to_action: {
-      icon: 'icon icon-unlink',
-      text: 'Liberte-me das fábricas'
+      icon: 'icon ion-android-done-all',
+      text: 'Quero meu app mais barato e melhor'
     },
     // COMPLEMENTARY to the existing solution || UNIQUELY different
     comparison: {
@@ -106,11 +107,11 @@ content = {
         },
         {
           competitor: 'Cobram por qualquer coisa a ser feita',
-          us: 'GRÁTIS diversas funções padrões'
+          us: 'GRÁTIS diversas funções padrão'
         },
         {
           competitor: 'Não sabem te ajudar nos próximos passos',
-          us: 'Estamos prontos para caminhar todos passos para te levar ao milhões'
+          us: 'Estamos aptos te levar ao milhões'
         },
         {
           competitor: 'Não se relacionam com investidores',
