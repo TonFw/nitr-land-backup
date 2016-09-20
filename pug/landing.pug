@@ -3,7 +3,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
   .container
     .navbar-header
       a(href="#")
-        .logo-container
+        .logo-container.text-shadow
           h2.brand-font-icon
             i(class="icon {{ content.brand.icon }}")
             span(ng-bind-html="escapeHTML(content.brand.name)")
@@ -13,26 +13,22 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
 // Content
 .wrapper
   // banner section
-  div(class="parallax filter-gradient {{ visual_identity.color }}")
+  div(class="parallax")
     .parallax-background
-      img.parallax-background-image(src="images/shutup-take-money.jpg")
+      img.parallax-background-image(src="images/bg.jpg" style="width: 120%;")
     .container(style="margin-left: 10%;")
       .row
         .col-md-7
           .description
-            h2 {{ content.banner.main_value }}
+            h2.strong {{ content.banner.main_value }}
             h4 {{ content.banner.second_value }}
-            h5
+            h5.black-text
               ul
                 li(ng-repeat="bullet in content.banner.bullets") {{ bullet }}
-          .call_to_action.col-md-8.col-md-offset-1.hide-on-small-only
-            a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
-              i(class="icon {{ content.banner.call_to_action.icon }}")
-              | {{ content.banner.call_to_action.text }}
 
         .col-md-5.col-xs-11.col-sm-8
           .parallax-image.video
-            p.left.white-text *Este vídeo não contém áudio
+            p.left.white-text.text-shadow *Este vídeo não contém áudio
             iframe(height="315" ng-src="{{ escapeVideo(content.banner.video) }}" frameborder="0" allowfullscreen)
 
         .call_to_action.col-xs-offset-1.col-xs-11.col-sm-offset-2.col-sm-12.hide-on-med-and-up
@@ -40,11 +36,19 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             i(class="icon {{ content.banner.call_to_action.icon }}")
             | {{ content.banner.call_to_action.text }}
 
+      .row
+        .call_to_action.col-md-6.col-md-offset-3.hide-on-small-only
+          a(class="col-md-12 btn btn-lg btn-fill btn-danger" ui-sref="register")
+            i(class="icon {{ content.banner.call_to_action.icon }}")
+            | {{ content.banner.call_to_action.text }}
+
+
 
   // guest post
-  .guest_post.section.section-presentation
+  .guest_post.section.section-presentation.margin_top
     .container
       h4.header-text.text-center {{ content.guest_post.title }}
+      h5.subtitle.text-center {{ content.guest_post.subtitle }}
       .row(ng-repeat="guest in content.guest_post.guests")
         .col-md-6
           .description
@@ -60,6 +64,25 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
           a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
             i(class="icon {{ content.guest_post.call_to_action.icon }}")
             | {{ content.guest_post.call_to_action.text }}
+
+
+
+  // partners or customer brand
+  .section.section-gray.section-clients
+    .container.text-center
+      h4.header-text {{ content.partners.title }}
+      p(ng-bind-html="escapeHTML(content.partners.description)")
+
+      .logos
+        ul.list-unstyled
+          li(ng-repeat="brand in content.partners.brands")
+            img(ng-src="images/brands/{{ brand }}")
+
+      .row.hide-on-small-only
+        .call_to_action.col-md-6.col-md-offset-3
+          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
+            i(class="icon {{ content.partners.call_to_action.icon }}")
+            | {{ content.partners.call_to_action.text }}
 
 
 
@@ -85,25 +108,6 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
           a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
             i(class="icon {{ content.showroom.call_to_action.icon }}")
             | {{ content.showroom.call_to_action.text }}
-
-
-
-  // partners or customer brand
-  .section.section-gray.section-clients
-    .container.text-center
-      h4.header-text {{ content.partners.title }}
-      p(ng-bind-html="escapeHTML(content.partners.description)")
-
-      .logos
-        ul.list-unstyled
-          li(ng-repeat="brand in content.partners.brands")
-            img(ng-src="images/brands/{{ brand }}")
-
-      .row.hide-on-small-only
-        .call_to_action.col-md-6.col-md-offset-3
-          a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
-            i(class="icon {{ content.partners.call_to_action.icon }}")
-            | {{ content.partners.call_to_action.text }}
 
 
 

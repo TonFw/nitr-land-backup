@@ -22,6 +22,7 @@ var paths = {
   scripts: [yeoman.app + '/scripts/**/*.js'],
   styles: [yeoman.app + '/styles/**/*.scss'],
   main_sass_file: `${yeoman.app}/styles/main.scss`,
+  // theme_sass_file: `${yeoman.app}/styles/theme.scss`,
   sass_dist: `${yeoman.dist}/styles`,
   test: ['test/spec/**/*.js'],
   pugs: ['pug/**/*.pug'],
@@ -86,6 +87,15 @@ gulp.task('sass', function() {
     }))
     .pipe(gulp.dest('public/styles'))
     .pipe($.connect.reload());
+
+  // gulp.src(paths.theme_sass_file)
+  //   .pipe(sass())
+  //   .on('error', sass.logError)
+  //   .pipe(minifyCss({
+  //     keepSpecialComments: 0
+  //   }))
+  //   .pipe(gulp.dest('public/styles'))
+  //   .pipe($.connect.reload());
 });
 
 // When it executes it drop the new HTML on the SRC folder, not on the PUBLIC folder

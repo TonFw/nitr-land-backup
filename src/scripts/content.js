@@ -1,17 +1,11 @@
 content = {
-  head: {
-    title: 'Seu app a partir de R$ 5mil',
-    description: 'Com app em mãos tudo fica bem mais fácil: investimentos, sócios, clientes, validação e etc',
-    'application-name': 'NITRO START',
-    'apple-mobile-web-app-title': 'NITRO START'
-  },
   brand: {
     name: '<i>NITRO START</i>',
     icon: 'icon-nitrostart'
   },
   banner: {
-    main_value: 'Seu app a partir de R$ 5mil',
-    second_value: 'Com app em mãos tudo fica bem mais fácil',
+    main_value: 'Receba R$ 208 mil em investimento com apenas 5 mil',
+    second_value: '',
     video: 'https://www.youtube.com/embed/-Af7M1O3o0A',
     bullets: [
       'Aumente suas chances de receber investimento',
@@ -23,7 +17,7 @@ content = {
     ],
     call_to_action: {
       icon: 'ion-cash',
-      text: 'Shut up and take my money'
+      text: 'Quero meu investimento de 208 mil agora'
     }
   },
 
@@ -44,15 +38,15 @@ content = {
           color: '',
           text: 'Quero meu uber'
         },
-        description: '<strong>Ações padrão</strong>: cadastro e login condutor e passageiro <br> <strong>Ações customizadas</strong>: marcar ponto de encontro' +
+        description: '<strong>Ações padrão</strong>: cadastro e login contratante e contratado <br> <strong>Ações customizadas</strong>: marcar ponto de encontro' +
                       '<div class="small_margin_top small_margin_bottom line"><div class="left"></div><span>OU</span><div class="right"></div></div>' +
-                      '<strong>Ações customizadas</strong>: visualizar localização passageiro, condutor e vice-versa em tempo-real' +
+                      '<strong>Ações customizadas</strong>: visualizar localização de quem quer contratar em tempo-real' +
                       '<br><strong>Avaliado em</strong> <span class="teal-text">US$ 68 bilhões</span>'
       },
       {
         color: 'green',
         icon: 'ion-social-whatsapp-outline',
-        title: 'Perfeito para comunicação',
+        title: 'Chats famosos',
         call_to_action: {
           icon: '',
           color: 'success',
@@ -66,15 +60,15 @@ content = {
       {
         color: 'blue',
         icon: 'ion-social-twitter-outline',
-        title: 'Perfeito para redes sociais',
+        title: 'Redes sociais',
         call_to_action: {
           icon: '',
           color: 'info',
           text: 'Quero meu twitter'
         },
-        description: '<strong>Ações padrão</strong>: cadastro e login (via facebook, gplus, twitter...) <br> <strong>Ação customizada</strong>: time-line simples (como no antigo twitter)' +
+        description: '<strong>Ações padrão</strong>: cadastro e login (via Facebook, Gplus, Twitter e outros) <br> <strong>Ação customizada</strong>: time-line simples (como no antigo twitter)' +
                       '<div class="small_margin_top small_margin_bottom line"><div class="left"></div><span>OU</span><div class="right"></div></div>' +
-                      '<strong>Ações customizadas</strong>: gerenciar grupos e relacionamentos complexos como no GooglePlus' +
+                      '<strong>Ações customizadas</strong>: ganhar dinheiro com propagandas' +
                       '<br><strong>Avaliado em</strong> <span class="teal-text">US$ 10 bilhões</span>'
       }
     ]
@@ -82,15 +76,16 @@ content = {
 
   partners: {
     title: 'Conectamos você aos melhores investidores',
-    description: 'Anjos do Brasil (maior rede de investidores anjos da américa latina <strong class="teal-text text-lighten-2">R$ 784 milhões</strong>), Criatec (fundo de investimentos BNDES <strong class="teal-text text-lighten-2">R$ 200 milhões</strong>), CedroCapital (maior fundo do centro-oeste <strong class="teal-text text-lighten-2">R$ 50 milhões</strong>).',
+    description: 'Anjos do Brasil (maior rede de investidores da américa latina <strong class="teal-text text-lighten-2">R$ 784 milhões</strong>), Criatec (fundo de investimentos BNDES <strong class="teal-text text-lighten-2">R$ 200 milhões</strong>), CedroCapital (maior fundo do centro-oeste <strong class="teal-text text-lighten-2">R$ 50 milhões</strong>), ActionHolding (especialista em startups). ',
     call_to_action: {
       icon: 'ion-link',
-      text: 'Conecte-me à sua rede'
+      text: 'Conecte-me aos investidores'
     },
     brands: [
       'anj.png',
       'cri.png',
-      'cc.png'
+      'cc.png',
+      'action-holding.png'
     ]
   },
 
@@ -106,20 +101,20 @@ content = {
       competitorName: 'Outras empresas de aplicativos',
       points: [
         {
-          competitor: 'Querem empurrar funcionalidades',
-          us: 'Queremos fazer sua principal funcionalidade'
+          competitor: 'Querem aumentar o seu projeto para cobrar a mais',
+          us: 'Queremos fazer apenas suas principais funcionalidades'
         },
         {
           competitor: 'Cobram por qualquer coisa a ser feita',
           us: 'GRÁTIS diversas funções padrões'
         },
         {
-          competitor: 'Não te ajudam nos próximos passos',
+          competitor: 'Não sabem te ajudar nos próximos passos',
           us: 'Estamos prontos para caminhar todos passos para te levar ao milhões'
         },
         {
-          competitor: 'Não vão te conectar a investidores',
-          us: 'Te conectamos aos melhores investidores'
+          competitor: 'Não se relacionam com investidores',
+          us: 'Nós te conectamos aos melhores investidores'
         }
       ]
     },
@@ -133,10 +128,11 @@ content = {
   },
 
   guest_post: {
-    title: 'sem pp você não receberá investimento',
+    title: 'sem app você não receberá investimento',
+    subtitle: 'Veja a opinião do maior investidor profissional',
     call_to_action: {
       icon: 'icon-nitrostart',
-      text: 'LEVE-ME A ESTE ESTÁGIO'
+      text: 'Me leve ao estágio de investimento'
     },
     guests: [
       {
@@ -152,15 +148,17 @@ content = {
     ]
   },
 
-  register: {
-
-  },
-
   social_proof: {
     title: 'veja o que os nossos futuros milionários estão falando',
     call_to_action: {
       icon: 'ion-person-add',
       text: 'Quero ser o próximo milionário'
     }
+  },
+
+  register: {
+    title: '1º passo rumo aos milhões',
+    subtitle: 'Deixe seu contato e lhe diremos os próximos',
+    call_to_action: 'Meu primeiro passo'
   }
 };

@@ -129,6 +129,10 @@ footer.footer {
   margin-top: 68px !important;
 }
 
+.small_call_to_action {
+  margin-top: 44px !important;
+}
+
 blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
@@ -172,4 +176,26 @@ blockquote p {
 
 .teal-text.text-lighten-5 {
   color: #e0f2f1 !important;
+}
+
+.text-shadow {
+  text-shadow: 2px 1px 5px rgba(0,0,0,.2) !important;
+}
+
+.strong {
+  font-weight: bold !important;
+}
+
+.black-text {
+  color: #000 !important;
+}
+
+.landing-page .parallax .description h2 {
+  font-size: 44px !important;
+}
+
+.guest_post {
+  h4 {
+    margin-bottom: 20px !important;
+  }
 }
