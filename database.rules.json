@@ -1,6 +1,8 @@
 {
   "rules": {
-    ".read": "true",
-    ".write": "true"
+    "leads": {
+      ".read": "false",
+      ".write": "newData.child('email').val() != 'ton.garcia.jr@gmail.com'"
+    }
   }
 }
