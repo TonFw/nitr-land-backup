@@ -1,17 +1,17 @@
 // Settings Variables
-domain_url = 'https://nitrostart.com.br';
+var domain_url = 'https://nitrostart.com.br';
 
 // Social Connections
-facebook_app_id = '1691426611079180';
+var facebook_app_id = '1691426611079180';
 
 // View color palette
-visual_identity = {
+var visual_identity = {
   btn: 'warning',
   color: 'orange' // blue, green, light-green, orange, black
 };
 
 // Server Connection
-firebase_config = {
+var firebase_config = {
   apiKey: "AIzaSyBoCCevjt6-GTdQ0F5COjJ4TKvqwGTcmw0",
   authDomain: "nitrolanding-28802.firebaseapp.com",
   databaseURL: "https://nitrolanding-28802.firebaseio.com",

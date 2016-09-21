@@ -219,3 +219,16 @@ ul.check-list {
 .click_call {
   position: absolute !important;
 }
+
+.opaque.full-page.register-page:after {
+  background: rgba(120, 120, 120, 0.45) !important;
+  background: -moz-linear-gradient(top,rgba(120, 120, 120, 0.45) 0,rgba(52,52,52,.4) 100%) !important;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(120, 120, 120, 0.45)),color-stop(100%,rgba(52,52,52,.4))) !important;
+  background: -webkit-linear-gradient(top,rgba(120, 120, 120, 0.45) 0,rgba(52,52,52,.4) 100%) !important;
+  background: -o-linear-gradient(top,rgba(120, 120, 120, 0.45) 0,rgba(52,52,52,.4) 100%) !important;
+  background: -ms-linear-gradient(top,rgba(120, 120, 120, 0.45) 0,rgba(52,52,52,.4) 100%) !important;
+  background: linear-gradient(to bottom,rgba(120, 120, 120, 0.45) 0,rgba(52,52,52,.4) 100%) !important;
+  background-size: 150% 150%;
+  z-index: 3;
+  opacity: 1;
+}

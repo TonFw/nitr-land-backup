@@ -34,18 +34,6 @@
     <!-- endbuild -->
   </head>
   <body class="landing-page landing-page1">
-    <!-- Facebook PlugIn -->
-    <!--<div id="fb-root"></div>-->
-    <!--<script>-->
-      <!--(function(d, s, id) {-->
-        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
-        <!--if (d.getElementById(id)) return;-->
-        <!--js = d.createElement(s); js.id = id;-->
-        <!--js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7&appId=921682707977238";-->
-        <!--fjs.parentNode.insertBefore(js, fjs);-->
-      <!--}(document, 'script', 'facebook-jssdk'));-->
-    <!--</script>-->
-
     <!--[if lte IE 8]>
     <p class="browsehappy">Você está usando um navegador <strong>muito antigo</strong>. Por favor <a href="http://browsehappy.com/">atualize
       seu navegador</a> para melhorar sua experiência.</p>
@@ -54,15 +42,11 @@
     <!-- The view is loaded here -->
     <div ui-view></div>
 
-    <!-- need only if using modal form -->
-    <!--<script src="bower_components/jquery/dist/jquery.js"></script>-->
-    <!--<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>-->
-    <!--<script src="bower_components/ActionTive/sign_modal/login-register.js"></script>-->
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-ui-mask/dist/mask.min.js"></script>
 
     <script src="bower_components/firebase/firebase.js"></script>
     <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
@@ -74,6 +58,7 @@
     <script src="scripts/settings.js"></script>
     <script src="scripts/helpers.js"></script>
 
+    <script src="scripts/factories.js"></script>
     <script src="scripts/controllers.js"></script>
     <script src="scripts/app.js"></script>
     <!-- endbuild -->
@@ -104,6 +89,30 @@
         ga('send', 'pageview');
       }
     </script>
+
+    <!-- Start of Zopim Live Chat Script -->
+    <script type="text/javascript">
+      function startChart() {
+        if(window.location.href.indexOf('/#/register') >= 0) {
+          window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+          _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+            $.src="//v2.zopim.com/?4Dl1cYgEqB9R6qXOfKfivraHZ6AjV1qz";z.t=+new Date;$.
+              type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+
+          $zopim(function() {
+            $zopim.livechat.badge.show();
+          });
+        }
+      }
+
+      window.onhashchange = function() {
+        startChart();
+      };
+
+      startChart();
+    </script>
+    <!--End of Zopim Live Chat Script-->
 
     <link href="https://file.myfontastic.com/nKKRAFZFxkAsU3UWNR93S4/icons.css" rel="stylesheet">
   </body>

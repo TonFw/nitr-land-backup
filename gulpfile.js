@@ -21,6 +21,7 @@ var yeoman = {
 var paths = {
   scripts: [yeoman.app + '/scripts/**/*.js'],
   styles: [yeoman.app + '/styles/**/*.scss'],
+  theme_sass_file: `${yeoman.app}/styles/theme.scss`,
   main_sass_file: `${yeoman.app}/styles/main.scss`,
   sass_dist: `${yeoman.dist}/styles`,
   test: ['test/spec/**/*.js'],
@@ -86,6 +87,18 @@ gulp.task('sass', function() {
     }))
     .pipe(gulp.dest('public/styles'))
     .pipe($.connect.reload());
+
+  gulp.src(paths.theme_sass_file)
+    .pipe(sass())
+    .on('error', sass.logError)
+    .pipe(minifyCss({
+      keepSpecialComments: 0
+    }))
+    .pipe(gulp.dest('public/styles'))
+    .pipe($.connect.reload());
+
+  return gulp.src(paths.views.main)
+         .pipe($.connect.reload());
 });
 
 // When it executes it drop the new HTML on the SRC folder, not on the PUBLIC folder
@@ -195,6 +208,7 @@ gulp.task('clean:dist', function (cb) {
 gulp.task('client:build', ['html', 'styles'], function () {
   var jsFilter = $.filter('**/*.js');
   var cssFilter = $.filter('**/*.css');
+  runSequence(['sass']);
 
   return gulp.src(paths.views.main)
     .pipe($.useref({searchPath: [yeoman.app, '.tmp']}))

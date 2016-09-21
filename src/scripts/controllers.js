@@ -13,7 +13,13 @@ angular.module('FireLanding.controllers', [])
     };
   })
 
-  .controller('RegisterCtrl', function($scope) {
+  .controller('RegisterCtrl', function($scope, $firebaseArray, Leads) {
     $scope.content = content;
     $scope.visual_identity = visual_identity;
+
+    $scope.registerLead = function() {
+      // Firebase reference
+      $scope.leads = Leads.all();
+      $scope.leads.$add($scope.lead);
+    }
   });
