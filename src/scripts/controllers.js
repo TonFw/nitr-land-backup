@@ -19,7 +19,9 @@ angular.module('FireLanding.controllers', [])
 
     $scope.registerLead = function() {
       // Firebase reference
-      $scope.leads = Leads.all();
-      $scope.leads.$add($scope.lead);
+      $scope.registerLeadResp = Leads.register($scope, $scope.lead);
+      $scope.registerLeadResp.then(function(resp) {
+        console.log(resp);
+      });
     }
   });
