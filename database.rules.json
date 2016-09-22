@@ -1,9 +1,11 @@
 {
   "rules": {
     "leads": {
-      ".read": false,
+      ".read": true,
+      ".write": true,
+      ".indexOn": "email",
       "$lead_id": {
-        ".write": "newData.child('email').val() != 'ton.garcia.jr@gmail.com'"
+        ".validate": "!root.child('leads?orderBy=\"email\"&equalTo=\"' + newData.child($lead_id).child('email').val() + '\"').exists()"
       }
     }
   }
