@@ -11,7 +11,7 @@
     "Ionicons": "ionicons#^2.0.1",
     "firebase": "^3.4.0",
     "angularfire": "^2.0.2",
-    "angular-ui-mask": "^1.8.7"
+    "ngMask": "angular-mask#^3.1.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

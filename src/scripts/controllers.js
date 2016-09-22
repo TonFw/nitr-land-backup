@@ -13,17 +13,19 @@ angular.module('FireLanding.controllers', [])
     };
   })
 
-  .controller('RegisterCtrl', function($scope, $firebaseArray, Leads) {
-    $scope.content = content;
-    $scope.visual_identity = visual_identity;
+  .controller('ThanksPageCtrlCtrl', function($scope) {
 
+  })
+
+  .controller('RegisterCtrl', function($scope, $state, Leads) {
     // Perform events after Lead register action (check if it was successfully registered
     var afterRegisterLead = function(error) {
       if(error) {
         console.log(error);
+        alert('Ocorreu um erro, verifique todos campos e envie novamente.');
         $scope.sendingData = false;
       }else {
-        console.log('sucesso');
+        $state.go('thanks');
       }
     };
 

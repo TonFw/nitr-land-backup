@@ -31,18 +31,29 @@
           //      h5 Lorem title
           //      | Lorem ispum dolor it meum
           .col-md-4.col-md-offset-4
-            form(ng-model="lead")
+            form(name="leadForm" ng-submit="registerLead()" novalidate)
               .card.card-plain
                 .content
                   .form-group
-                    input(type="text" ng-model="lead.full_name" placeholder="Nome Completo" class="form-control")
+                    input(type="text" name="full_name" ng-model="lead.full_name" ng-minlength="4" placeholder="Nome Completo" class="form-control" required)
+                    div.info-text(ng-show="leadForm.full_name.$error.required") *Este campo é obrigatório
+                    div.info-text(ng-show="leadForm.full_name.$error.minlength") Seu nome está muito curto
+
+
                   .form-group
-                    input(type="email" ng-model="lead.email" placeholder="E-mail" class="form-control")
+                    input(type="email" name="email" ng-model="lead.email" placeholder="E-mail" class="form-control" required)
+                    div.info-text(ng-show="leadForm.email.$error.required") *Este campo é obrigatório
+                    div.info-text(ng-show="leadForm.email.$error.email") Digite um e-mail válido
+
+
                   .form-group
-                    input(type="phone" ng-model="lead.phone" placeholder="Telefone (DDD) 9999-9999" class="form-control")
-                | {{ $scope }}
-                .footer.text-center
-                  a.btn.btn-fill.btn-warning.btn-wd(ng-click="registerLead()" ng-disabled="{{ sendingData }}") Receber próximos passos
+                    input.form-control(type="phone" name="phone" ng-model="lead.phone" ng-minlength="11" mask='(99) ?9?9999-9999' placeholder="Telefone (DDD) 9999-9999" required)
+                    div.info-text(ng-show="leadForm.phone.$error.required") *Este campo é obrigatório
+                    div.info-text(ng-show="leadForm.phone.$error.minlength") Digite um telefone válido
+
+
+              .footer.text-center
+                a.btn.btn-fill.btn-warning.btn-wd(ng-disabled="!leadForm.$valid && !sendingData") Receber próximos passos
 
     .full-page-background(style="background-image: url(images/sun-and-earth-horizon.jpg)")
 

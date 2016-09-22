@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular.module('FireLanding', ['ui.router', 'ui.mask', 'firebase', 'FireLanding.controllers', 'FireLanding.factories'])
+angular.module('FireLanding', ['ui.router', 'ngMask', 'firebase', 'FireLanding.controllers', 'FireLanding.factories'])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('landing', {
@@ -20,6 +20,11 @@ angular.module('FireLanding', ['ui.router', 'ui.mask', 'firebase', 'FireLanding.
       url: '/register',
       templateUrl: 'views/register.html',
       controller: 'RegisterCtrl'
+    })
+    .state('thanks', {
+      url: '/thanks_page',
+      templateUrl: 'views/thanks_page.html',
+      controller: 'ThanksPageCtrl'
     });
 
     // if none of the above states are matched, use this as the fallback

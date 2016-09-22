@@ -30,7 +30,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
         .col-md-5.col-xs-11.col-sm-8
           .parallax-image.video
             p.left.white-text.text-shadow: strong *Este vídeo não contém áudio
-            iframe(height="315" ng-src="{{ escapeVideo(content.banner.video) }}" frameborder="0" allowfullscreen)
+            iframe#bannerVideo(height="315" ng-src="{{ escapeVideo(content.banner.video) }}" frameborder="0" allowfullscreen)
 
         .call_to_action.col-xs-12.col-sm-offset-2.col-sm-12.hide-on-med-and-up
           a(class="col-md-12 btn btn-lg btn-fill btn-danger" ui-sref="register")
@@ -140,6 +140,9 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             | {{ content.objections.call_to_action.text }}
 
 
+  script.
+    var bannerVideo = iframe.getElementById('bannerVideo');
+    bannerVideo.mute();
 
   //// customer social proof
   //.customer_posts.section.section-features
