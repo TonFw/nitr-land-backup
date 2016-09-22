@@ -21,15 +21,20 @@ and the [``` newData ```](https://www.firebase.com/docs/security/api/rule/newdat
 __Rules Cascade__: With the exception of ``` .validate ``` definitions, Security and Firebase Rules work from a top-down model. 
 If a parent node grants ```.read``` or ```.write``` permissions, then it also grants access to all child nodes under it.
 
-__Query validation__: we can create filters by GET params: ``` root.child('leads?orderBy=\"email\"&equalTo='+ newData.child(newData.id).child('email').val()).exists() ```.
-The problem is that ``` firebase.push & $array.$add ``` generate ID, so the object send is not only a Data object with it attrs, it is an Id with attributes, like:
+__REST API Query__: we can create filters by GET params: ``` app_name.firebase.google.com/collection_name.json?orderBy="indexAttribute"&equalTo="value" ```
+
+__Query validation__: When we use location, like ($lead), we to not need to use .child() to go inside it attributes, the newData is on it location already: 
   ```json
-    {
-      "-KSHFAfbqZa29gzpUo6O":{
-        "full_name": "ilton silveira",
-        "email": "i5@i.i"
+     {
+      "rules": {
+        "leads": {
+          "$lead": {
+            // VALIDATIONS GO HERE ($LOCATION)
+            ".validate": "newData.hasChildren(['full_name', 'email', 'phone'])"
+          }
+        }
       }
-    } 
+    }
   ```
 
 
