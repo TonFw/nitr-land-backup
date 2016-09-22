@@ -1,12 +1,6 @@
 {
   "rules": {
-    "leads": {
-      ".read": true,
-      ".write": true,
-      ".indexOn": "email",
-      "$lead_id": {
-        ".validate": "!root.child('leads?orderBy=\"email\"&equalTo=\"' + newData.child($lead_id).child('email').val() + '\"').exists()"
-      }
-    }
+    ".read": false,
+    ".write": true
   }
 }
