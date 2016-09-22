@@ -17,11 +17,21 @@ angular.module('FireLanding.controllers', [])
     $scope.content = content;
     $scope.visual_identity = visual_identity;
 
+    // Perform events after Lead register action (check if it was successfully registered
+    var afterRegisterLead = function(error) {
+      if(error) {
+        console.log(error);
+        $scope.sendingData = false;
+      }else {
+        console.log('sucesso');
+      }
+    };
+
     $scope.registerLead = function() {
+      // Prevent more than one submission click
+      $scope.sendingData = true;
+
       // Firebase reference
-      $scope.registerLeadResp = Leads.register($scope, $scope.lead);
-      $scope.registerLeadResp.then(function(resp) {
-        console.log(resp);
-      });
+      $scope.registerLeadResp = Leads.register($scope, $scope.lead, afterRegisterLead);
     }
   });

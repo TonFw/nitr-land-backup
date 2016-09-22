@@ -1,6 +1,11 @@
 {
   "rules": {
     ".read": false,
-    ".write": true
+    ".write": true,
+    "leads": {
+      "$lead_id": {
+        ".validate": "newData.hasChildren(['full_name', 'email', 'phone'])"
+      }
+    }
   }
 }

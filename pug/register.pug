@@ -42,7 +42,7 @@
                     input(type="phone" ng-model="lead.phone" placeholder="Telefone (DDD) 9999-9999" class="form-control")
                 | {{ $scope }}
                 .footer.text-center
-                  a.btn.btn-fill.btn-warning.btn-wd(ng-click="registerLead()") Receber próximos passos
+                  a.btn.btn-fill.btn-warning.btn-wd(ng-click="registerLead()" ng-disabled="{{ sendingData }}") Receber próximos passos
 
     .full-page-background(style="background-image: url(images/sun-and-earth-horizon.jpg)")
 
