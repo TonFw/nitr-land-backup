@@ -27,12 +27,12 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
                 li(ng-repeat="bullet in content.banner.bullets") {{ bullet }}
             h4.strong.text-center.small_margin_top {{ content.banner.extra }}
 
-        .col-md-5.col-xs-11.col-sm-8
+        .col-md-5.col-xs-12.col-sm-12
           .parallax-image.video
             p.left.white-text.text-shadow: strong *Este vídeo não contém áudio
             iframe#bannerVideo(height="315" ng-src="{{ escapeVideo(content.banner.video) }}" frameborder="0" allowfullscreen)
 
-        .call_to_action.col-xs-12.col-sm-offset-2.col-sm-12.hide-on-med-and-up
+        .call_to_action.col-xs-12.col-sm-12.hide-on-med-and-up
           a(class="col-md-12 btn btn-lg btn-fill btn-danger" ui-sref="register")
             i(class="icon {{ content.banner.call_to_action.icon }}")
             | {{ content.banner.call_to_action.text }}
@@ -79,9 +79,14 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
           li(ng-repeat="brand in content.partners.brands")
             img(ng-src="images/brands/{{ brand }}")
 
-      .row.hide-on-small-only
-        .call_to_action.col-md-6.col-md-offset-3
+      .row
+        .call_to_action.col-md-6.col-md-offset-3.hide-on-small-only
           a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
+            i(class="icon {{ content.partners.call_to_action.icon }}")
+            | {{ content.partners.call_to_action.text }}
+
+        .call_to_action.col-md-6.col-md-offset-3.hide-on-med-and-up
+          a(class="col-md-12 btn btn-lg btn-fill btn-warning" ui-sref="register")
             i(class="icon {{ content.partners.call_to_action.icon }}")
             | {{ content.partners.call_to_action.text }}
 
