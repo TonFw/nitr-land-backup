@@ -53,7 +53,7 @@
 
 
               .footer.text-center
-                a.btn.btn-fill.btn-warning.btn-wd(ng-disabled="!leadForm.$valid && !sendingData") Receber próximos passos
+                a.btn.btn-fill.btn-warning.btn-wd(type="submit" ng-click="registerLead()" ng-disabled="!leadForm.$valid && !sendingData") Receber próximos passos
 
     .full-page-background(style="background-image: url(images/sun-and-earth-horizon.jpg)")
 

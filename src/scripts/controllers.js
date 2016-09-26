@@ -4,6 +4,10 @@ angular.module('FireLanding.controllers', [])
     $scope.content = content;
     $scope.visual_identity = visual_identity;
 
+    if(localStorage.registered == true) {
+      $state.go('thanks');
+    }
+
     $scope.escapeHTML = function(text) {
       return $sce.trustAsHtml(text);
     };
@@ -25,13 +29,29 @@ angular.module('FireLanding.controllers', [])
         alert('Ocorreu um erro, verifique todos campos e envie novamente.');
         $scope.sendingData = false;
       }else {
+        localStorage.registered = true;
         $state.go('thanks');
       }
     };
 
     $scope.registerLead = function() {
+      // check if the lead is filled, abort if not
+      if($scope.lead == undefined || $scope.lead == null) $scope.lead = {name: null, email: null};
+      for(var attr in $scope.lead) {
+        var currentAttrValue = $scope.lead[attr];
+        if(currentAttrValue == undefined || currentAttrValue == null || currentAttrValue.length == 0) {
+          // Abort alert & abort it
+          alert('Ocorreu um erro, verifique todos campos e envie novamente.');
+          return;
+        }
+      }
+
       // Prevent more than one submission click
       $scope.sendingData = true;
+
+      if(localStorage.registered == true) {
+        $state.go('thanks');
+      }
 
       // Firebase reference
       $scope.registerLeadResp = Leads.register($scope, $scope.lead, afterRegisterLead);
