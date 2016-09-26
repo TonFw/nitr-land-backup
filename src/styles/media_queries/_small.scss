@@ -13,7 +13,7 @@
   }
 
   .landing-page .parallax {
-    height: 1360px !important;
+    height: 1380px !important;
   }
 
   #comparison {
@@ -51,11 +51,9 @@
     }
   }
 
-  .call_to_action.hide-on-med-and-up {
-    margin-left: 10px !important;
-  }
-
   .call_to_action {
-    margin-left: 20px !important;
+    a {
+      margin-left: 20px !important;
+    }
   }
 }
