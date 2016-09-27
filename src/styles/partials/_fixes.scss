@@ -120,7 +120,7 @@ footer.footer {
 }
 
 .landing-page .parallax {
-   height: 700px !important;
+   height: 750px !important;
 
   .parallax-background img {
     height: 100% !important;
@@ -218,6 +218,10 @@ ul.check-list {
 
 .click_call {
   position: absolute !important;
+}
+
+.full-page:after {
+  background: none !important;
 }
 
 .opaque.full-page.register-page:after {
