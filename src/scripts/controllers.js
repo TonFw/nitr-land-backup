@@ -22,6 +22,11 @@ angular.module('FireLanding.controllers', [])
   })
 
   .controller('RegisterCtrl', function($scope, $state, Leads) {
+    // if the lead is already registered so go to thanks page
+    if(localStorage.registered == "true") {
+      $state.go('thanks');
+    }
+
     // Perform events after Lead register action (check if it was successfully registered
     var afterRegisterLead = function(error) {
       if(error) {
@@ -29,11 +34,19 @@ angular.module('FireLanding.controllers', [])
         alert('Ocorreu um erro, verifique todos campos e envie novamente.');
         $scope.sendingData = false;
       }else {
+        // register it lead on localStorage
         localStorage.registered = true;
+
+        // create it localStorage lead attrs
+        $scope.lead.id = $scope.registerLeadResp.path.o[1];
+        localStorage.lead = JSON.stringify($scope.lead);
+
+        // go to thanks page
         $state.go('thanks');
       }
     };
 
+    // register lead action
     $scope.registerLead = function() {
       // check if the lead is filled, abort if not
       if($scope.lead == undefined || $scope.lead == null) $scope.lead = {name: null, email: null};
@@ -48,10 +61,6 @@ angular.module('FireLanding.controllers', [])
 
       // Prevent more than one submission click
       $scope.sendingData = true;
-
-      if(localStorage.registered == true) {
-        $state.go('thanks');
-      }
 
       // Firebase reference
       $scope.registerLeadResp = Leads.register($scope, $scope.lead, afterRegisterLead);
