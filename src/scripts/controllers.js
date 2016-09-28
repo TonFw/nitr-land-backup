@@ -13,39 +13,6 @@ angular.module('FireLanding.controllers', [])
     };
   })
 
-  .controller('ThanksPageCtrl', function($scope) {
-    $scope.shareOn = function (socialMedia) {
-      // Aux encoded Variables
-      var via = '';
-      var text = '';
-      var title = '';
-      var avatar = '';
-      var hashTags = '';
-      var encodedURL = '';
-
-      switch(socialMedia) {
-        case 'facebook':
-          // return `https://www.facebook.com/sharer/sharer.php?u=${encodedURL}`;
-          return 'https://www.facebook.com/sharer/sharer.php?u='+encodedURL;
-        break;
-
-        case 'twitter':
-          // return `https://twitter.com/intent/tweet?url=${encodedURL}&text=${text}&via=${via}&hashtags=${hashTags}`;
-          return 'https://twitter.com/intent/tweet?url='+encodedURL+'&text='+text+'&via='+via+'&hashtags='+hashTags;
-        break;
-
-        case 'gplus':
-          // return `https://plus.google.com/share?url=${encodedURL}`;
-          return 'https://plus.google.com/share?url='+encodedURL;
-        break;
-
-        case 'linkedin':
-          // return `https://www.linkedin.com/shareArticle?mini=true&url=${encodedURL}&title=${title}&summary=${text}&source=${avatar}`;
-          return 'https://www.linkedin.com/shareArticle?mini=true&url='+encodedURL+'&title='+title+'&summary='+text+'&source='+avatar;
-        break;
-      }
-    }
-  })
 
   .controller('RegisterCtrl', function($scope, $state, Leads) {
     // if the lead is already registered so go to thanks page
@@ -93,5 +60,40 @@ angular.module('FireLanding.controllers', [])
 
       // Firebase reference
       $scope.registerLeadResp = Leads.register($scope, $scope.lead, afterRegisterLead);
+    }
+  })
+
+
+  .controller('ThanksPageCtrl', function($scope) {
+    $scope.shareOn = function (socialMedia) {
+      // Aux encoded Variables
+      var via = '';
+      var text = '';
+      var title = '';
+      var avatar = '';
+      var hashTags = '';
+      var encodedURL = '';
+
+      switch(socialMedia) {
+        case 'facebook':
+          // return `https://www.facebook.com/sharer/sharer.php?u=${encodedURL}`;
+          return 'https://www.facebook.com/sharer/sharer.php?u='+encodedURL;
+          break;
+
+        case 'twitter':
+          // return `https://twitter.com/intent/tweet?url=${encodedURL}&text=${text}&via=${via}&hashtags=${hashTags}`;
+          return 'https://twitter.com/intent/tweet?url='+encodedURL+'&text='+text+'&via='+via+'&hashtags='+hashTags;
+          break;
+
+        case 'gplus':
+          // return `https://plus.google.com/share?url=${encodedURL}`;
+          return 'https://plus.google.com/share?url='+encodedURL;
+          break;
+
+        case 'linkedin':
+          // return `https://www.linkedin.com/shareArticle?mini=true&url=${encodedURL}&title=${title}&summary=${text}&source=${avatar}`;
+          return 'https://www.linkedin.com/shareArticle?mini=true&url='+encodedURL+'&title='+title+'&summary='+text+'&source='+avatar;
+          break;
+      }
     }
   });

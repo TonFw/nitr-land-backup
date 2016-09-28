@@ -1,0 +1,10 @@
+{
+  "rules": {
+    ".read": false,
+    "leads": {
+      "$lead_id": {
+        ".write": "newData.child($lead_id).hasChildren(['full_name', 'email', 'phone'])"
+      }
+    }
+  }
+}

@@ -29,4 +29,18 @@ angular.module('FireLanding', ['ui.router', 'ngMask', 'firebase', 'FireLanding.c
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/');
+  })
+
+  .config(function($provide) {
+    $provide.decorator('$firebaseArray', function($delegate, $window) {
+      var add = $delegate.prototype.$add;
+
+      $delegate.prototype.$add = function(newData) {
+        newData.created_at = $window.Firebase.ServerValue.TIMESTAMP;
+
+        return add.call(this, newData);
+      };
+
+      return $delegate;
+    });
   });
