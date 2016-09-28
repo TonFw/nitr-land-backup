@@ -4,10 +4,6 @@ angular.module('FireLanding.controllers', [])
     $scope.content = content;
     $scope.visual_identity = visual_identity;
 
-    if(localStorage.registered == "true") {
-      $state.go('thanks');
-    }
-
     $scope.escapeHTML = function(text) {
       return $sce.trustAsHtml(text);
     };
