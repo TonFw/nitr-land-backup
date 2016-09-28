@@ -30,7 +30,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
         .col-md-5.col-xs-12.col-sm-12
           .parallax-image.video
             p.left.white-text.text-shadow: strong *Este vídeo não contém áudio
-            iframe#bannerVideo(height="315" ng-src="{{ escapeVideo(content.banner.video) }}" frameborder="0" allowfullscreen)
+            iframe#bannerVideo(height="315" src="https://www.youtube.com/embed/-Af7M1O3o0A" frameborder="0" allowfullscreen)
 
         .call_to_action.col-xs-12.col-sm-12.hide-on-med-and-up
           a(class="col-md-12 btn btn-lg btn-fill btn-danger" ui-sref="register")
@@ -58,7 +58,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             blockquote: p(ng-bind-html) {{ guest.summary }}
         .video.col-md-6
           .description
-            iframe(width="100%" height="300" ng-src="{{ escapeVideo(guest.video) }}" frameborder="0" allowfullscreen)
+            iframe(width="100%" height="300" src="https://www.youtube.com/embed/e6J10EHbN6Q" frameborder="0" allowfullscreen)
 
       .row
         .call_to_action.col-md-6.col-md-offset-3

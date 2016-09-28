@@ -6,7 +6,6 @@ content = {
   banner: {
     main_value: 'Receba R$ 208 mil em investimento com apenas 5 mil reais',
     second_value: '',
-    video: 'https://www.youtube.com/embed/-Af7M1O3o0A',
     bullets: [
       'Aumente suas chances de receber investimento',
       'Seu aplicativo pré-operacional entregue em até 1 mês',
@@ -144,7 +143,6 @@ content = {
         //           ' Nenhum investidor profissional entra no estágio da ideia. ' +
         //           'A fase ideal para receber investimento é quando está dando os primeiros passos para vender seu produto.' +
         //           ' O investidor lhe ajudará com dinheiro e experiência.',
-        video: 'https://www.youtube.com/embed/e6J10EHbN6Q'
       }
     ]
   },

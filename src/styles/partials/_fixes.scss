@@ -303,3 +303,68 @@ ul.check-list {
        -webkit-transform: scaleY(1.0);
      }
 }
+
+i.left-icon {
+  top: 5px;
+  font-size: 1.8em;
+  margin-right: 15px;
+  position: relative;
+}
+
+.social-action {
+  margin: 0 15px;
+
+  span.separator {
+    margin: 0 10px 0 5px !important;
+  }
+}
+
+.btn-white {
+  color: white !important;
+  border: 1px solid white !important;
+}
+
+.landing-page .section-features .card.card-white{
+  color: white;
+  border-color: white;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.landing-page .section-features .card.card-white .icon i{
+  color: white;
+}
+
+.full-page {
+  .section-features {
+    margin-top: -20px !important;
+
+    .card {
+      min-height: 200px;
+    }
+  }
+}
+
+ul.tabs {
+  li {
+    float: right;
+    list-style: none;
+    text-align: center;
+
+    &.active {
+      a {
+        cursor: default;
+        border-bottom: 2px solid white;
+      }
+    }
+
+    a {
+      padding: 10px;
+      cursor: pointer;
+      color: white !important;
+      text-transform: uppercase;
+    }
+  }
+}
