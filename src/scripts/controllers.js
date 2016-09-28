@@ -23,7 +23,7 @@ angular.module('FireLanding.controllers', [])
 
   .controller('RegisterCtrl', function($scope, $state, Leads) {
     // if the lead is already registered so go to thanks page
-    if(localStorage.registered == "true") {
+    if(localStorage.registered == true) {
       $state.go('thanks');
     }
 
@@ -48,6 +48,9 @@ angular.module('FireLanding.controllers', [])
 
     // register lead action
     $scope.registerLead = function() {
+      // Abort if it leadForm is not valid
+      if(!$scope.leadForm.$valid) return;
+
       // check if the lead is filled, abort if not
       if($scope.lead == undefined || $scope.lead == null) $scope.lead = {name: null, email: null};
       for(var attr in $scope.lead) {
