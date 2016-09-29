@@ -138,7 +138,8 @@ content = {
       {
         name: 'Cassio Spina',
         role: 'Autor de diversos Livros, Investidor Anjo Profissional e fundador/presidente da Anjos do Brasil',
-        summary: 'Nenhum investidor entra no estágio da ideia. Somente com o Protótipo pronto você terá chances de conseguir investimento',
+        summary: 'Nenhum investidor entra no estágio da ideia. Somente com o Protótipo pronto você terá chances de conseguir investimento.',
+        summary2: 'E se roubarem minha ideia? Quem disse que só você, entre 7 bilhões de pessoas, teve essa ideia? Importante: execução rápida e barata.',
         // summary: 'Somente após atingir o estágio de Protótipo você terá chances reais de conseguir investimento de anjos.' +
         //           ' Nenhum investidor profissional entra no estágio da ideia. ' +
         //           'A fase ideal para receber investimento é quando está dando os primeiros passos para vender seu produto.' +
