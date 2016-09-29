@@ -12,7 +12,7 @@ angular.module('FireLanding', ['ui.router', 'ngMask', 'firebase', 'FireLanding.c
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('landing', {
-      url: '/',
+      url: '/startup',
       templateUrl: 'views/landing.html',
       controller: 'LandingCtrl'
     })
@@ -28,7 +28,7 @@ angular.module('FireLanding', ['ui.router', 'ngMask', 'firebase', 'FireLanding.c
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/startup');
   })
 
   .config(function($provide) {

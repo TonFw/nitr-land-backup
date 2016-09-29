@@ -13,7 +13,7 @@
   }
 
   .landing-page .parallax {
-    height: 1380px !important;
+    height: 1460px !important;
   }
 
   #comparison {
@@ -58,6 +58,15 @@
   }
 
   footer.footer {
+    div[class^="col-md-"],
+    div[class*=" col-md-"] {
+      margin: 35px 0 !important;
+    }
+
+    i.legal_id.icon {
+      top: 70% !important;
+    }
+
     p {
       margin-left: 50px;
     }
