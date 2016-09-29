@@ -56,10 +56,11 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             h4.header-text {{ guest.name }}
             h5.subtitle {{ guest.role }}
             blockquote: p {{ guest.summary }}
-            div: blockquote: p {{ guest.summary2 }}
+            blockquote: p {{ guest.summary2 }}
+            blockquote: p {{ guest.summary3 }}
         .video.col-md-6
           .description
-            iframe(width="100%" height="300" src="https://www.youtube.com/embed/V1STaqCMzGY?list=PLonukOjaTmG--qHwYC-t9lO-3qqOFrziF" frameborder="0" allowfullscreen)
+            iframe(width="100%" height="350" src="https://www.youtube.com/embed/V1STaqCMzGY?list=PLonukOjaTmG--qHwYC-t9lO-3qqOFrziF" frameborder="0" allowfullscreen)
 
       .row
         .call_to_action.col-md-6.col-md-offset-3

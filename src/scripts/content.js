@@ -128,7 +128,7 @@ content = {
   },
 
   guest_post: {
-    title: 'sem app você não receberá investimento',
+    title: ' Somente com o Protótipo você terá chances de conseguir investimento.',
     subtitle: 'Veja a opinião do maior investidor profissional',
     call_to_action: {
       icon: 'icon-nitrostart',
@@ -138,8 +138,9 @@ content = {
       {
         name: 'Cassio Spina',
         role: 'Autor de diversos Livros, Investidor Anjo Profissional e fundador/presidente da Anjos do Brasil',
-        summary: 'Nenhum investidor entra no estágio da ideia. Somente com o Protótipo pronto você terá chances de conseguir investimento.',
-        summary2: 'E se roubarem minha ideia? Quem disse que só você, entre 7 bilhões de pessoas, teve essa ideia? Importante: execução rápida e barata.',
+        summary: 'Nenhum investidor entra no estágio da ideia.',
+        summary2: 'Se roubarem minha ideia? Quem disse que só você, entre 7 bilhões de pessoas, teve esta ideia?',
+        summary3: 'Invisto em quem faz muito com pouco, pois sei que se colocar mais, ganho muito mais.',
         // summary: 'Somente após atingir o estágio de Protótipo você terá chances reais de conseguir investimento de anjos.' +
         //           ' Nenhum investidor profissional entra no estágio da ideia. ' +
         //           'A fase ideal para receber investimento é quando está dando os primeiros passos para vender seu produto.' +
