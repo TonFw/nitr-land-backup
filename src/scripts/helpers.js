@@ -9,3 +9,7 @@ function isItEnv(type) {
     return !envLocal;
   }
 }
+
+function currentLead() {
+  return JSON.parse(localStorage.lead);
+}

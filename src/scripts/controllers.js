@@ -64,32 +64,34 @@ angular.module('FireLanding.controllers', [])
     $scope.shareOn = function (socialMedia) {
       // Aux encoded Variables
       var via = '';
-      var text = '';
+      var text = 'Estou criando meu app agora, comece o seu também e ganhe R$ 500 de desconto';
       var title = '';
       var avatar = '';
       var hashTags = '';
-      var encodedURL = '';
+      var encodedURL = 'https://nitrostart.com.br/r='+currentLead().id;
 
       switch(socialMedia) {
         case 'facebook':
           // return `https://www.facebook.com/sharer/sharer.php?u=${encodedURL}`;
           return 'https://www.facebook.com/sharer/sharer.php?u='+encodedURL;
-          break;
+        break;
 
         case 'twitter':
           // return `https://twitter.com/intent/tweet?url=${encodedURL}&text=${text}&via=${via}&hashtags=${hashTags}`;
-          return 'https://twitter.com/intent/tweet?url='+encodedURL+'&text='+text+'&via='+via+'&hashtags='+hashTags;
-          break;
+          // return 'https://twitter.com/intent/tweet?url='+encodedURL+'&text='+text+'&via='+via+'&hashtags='+hashTags;
+          return 'https://twitter.com/intent/tweet?url='+encodedURL+'&text='+text;
+        break;
 
         case 'gplus':
           // return `https://plus.google.com/share?url=${encodedURL}`;
           return 'https://plus.google.com/share?url='+encodedURL;
-          break;
+        break;
 
         case 'linkedin':
           // return `https://www.linkedin.com/shareArticle?mini=true&url=${encodedURL}&title=${title}&summary=${text}&source=${avatar}`;
-          return 'https://www.linkedin.com/shareArticle?mini=true&url='+encodedURL+'&title='+title+'&summary='+text+'&source='+avatar;
-          break;
+          // return 'https://www.linkedin.com/shareArticle?mini=true&url='+encodedURL+'&title='+title+'&summary='+text+'&source='+avatar;
+          return 'https://www.linkedin.com/shareArticle?mini=true&url='+encodedURL+'&summary='+text;
+        break;
       }
     }
   });

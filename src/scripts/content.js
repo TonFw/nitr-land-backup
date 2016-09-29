@@ -4,7 +4,7 @@ content = {
     icon: 'icon-nitrostart'
   },
   banner: {
-    main_value: 'Receba R$ 208 mil em investimento com apenas 5 mil reais',
+    main_value: 'Receba R$ 208 mil em investimento anjo com apenas 5 mil reais',
     second_value: '',
     bullets: [
       'Aumente suas chances de receber investimento',

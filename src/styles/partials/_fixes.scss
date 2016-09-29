@@ -131,6 +131,10 @@ footer.footer {
   }
 }
 
+.small_margin_right {
+  margin-right: 10px;
+}
+
 .call_to_action {
   margin-top: 68px !important;
 }
@@ -365,6 +369,54 @@ ul.tabs {
       cursor: pointer;
       color: white !important;
       text-transform: uppercase;
+    }
+  }
+}
+
+footer.footer {
+  .col-md-4 {
+    color: #9e9e9e !important;
+  }
+
+  p {
+    margin-left: 25px;
+    font-size: 13px !important;
+  }
+
+  i.icon {
+    top: 5px;
+    left: -5px;
+    font-size: 3em;
+    position: absolute;
+  }
+
+  ul.contact_info {
+    list-style: none;
+
+    li {
+      margin: 0 0 10px;
+    }
+
+    span {
+      color: #9e9e9e !important;
+    }
+
+    i {
+      font-size: 1.5em;
+    }
+
+    i.small_margin_right {
+      left: 30px;
+      position: absolute;
+    }
+
+    i.ion-email {
+      color: #fba400;
+    }
+
+    i.ion-social-whatsapp,
+    i.ion-social-whatsapp-outline {
+      color: #3ABE41;
     }
   }
 }

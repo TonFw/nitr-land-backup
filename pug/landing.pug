@@ -145,9 +145,32 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
             | {{ content.objections.call_to_action.text }}
 
 
-  script.
-    var bannerVideo = iframe.getElementById('bannerVideo');
-    bannerVideo.mute();
+
+  footer.footer
+    .container
+      .col-md-4.pull-left
+        i.icon.ion-map
+        p SAUS, Quadra 04, Bloco A, Sala 725, Edifício Victoria Office Tower – Asa Sul, DF, 70070-938
+      .col-md-4.col-md-offset-1
+        i.icon.ion-ribbon-b
+        p
+          strong CNPJ: 22.236.917/0001­22
+          br
+          i NITRO START
+          | &nbsp; tecnologia e serviços.
+          br
+          | Empresa do grupo Action Holding.
+      .col-md-3
+        ul.contact_info
+          li
+            i.small_margin_right.ion-social-whatsapp-outline
+            span +55 (61) 98130-0410
+          li
+            i.small_margin_right.ion-email
+            span contato@actionholding.com.br
+
+
+
 
   //// customer social proof
   //.customer_posts.section.section-features
@@ -161,3 +184,7 @@ nav.navbar.navbar-transparent.navbar-top(role="navigation")
   //        a(class="col-md-12 btn btn-lg btn-fill btn-{{ visual_identity.btn }}" ui-sref="register")
   //          i(class="icon {{ content.social_proof.call_to_action.icon }}")
   //          | {{ content.social_proof.call_to_action.text }}
+
+  script.
+    var bannerVideo = iframe.getElementById('bannerVideo');
+    bannerVideo.mute();
