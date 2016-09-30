@@ -11,24 +11,24 @@
 angular.module('FireLanding', ['ui.router', 'ngMask', 'firebase', 'FireLanding.controllers', 'FireLanding.factories'])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-    .state('landing', {
-      url: '/startup',
-      templateUrl: 'views/landing.html',
-      controller: 'LandingCtrl'
-    })
-    .state('register', {
-      url: '/register',
-      templateUrl: 'views/register.html',
-      controller: 'RegisterCtrl'
-    })
-    .state('thanks', {
-      url: '/thanks_page',
-      templateUrl: 'views/thanks_page.html',
-      controller: 'ThanksPageCtrl'
-    });
+      .state('landing', {
+        url: '/:investorType',
+        templateUrl: 'views/landing.html',
+        controller: 'LandingCtrl'
+      })
+      .state('register', {
+        url: '/register/:investorType',
+        templateUrl: 'views/register.html',
+        controller: 'RegisterCtrl'
+      })
+      .state('thanks', {
+        url: '/thanks_page/:investorType',
+        templateUrl: 'views/thanks_page.html',
+        controller: 'ThanksPageCtrl'
+      });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/startup');
+    $urlRouterProvider.otherwise('/angel_investor');
   })
 
   .config(function($provide) {

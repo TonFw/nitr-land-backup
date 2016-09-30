@@ -1,7 +1,7 @@
-content = {
+starter_investor_content = {
   brand: {
-    name: '<i>NITRO START</i>',
-    icon: 'icon-nitrostart'
+    name: '<i>savest</i>',
+    icon: 'ion-lock-combination'
   },
   banner: {
     main_value: 'Receba R$ 208 mil em investimento anjo com apenas 5 mil reais',
@@ -37,9 +37,9 @@ content = {
           text: 'Quero meu uber'
         },
         description: '<strong>Ações padrão</strong>: cadastro e login contratante e contratado <br> <strong>Ações customizadas</strong>: marcar ponto de encontro' +
-                      '<div class="small_margin_top small_margin_bottom line"><div class="left"></div><span>OU</span><div class="right"></div></div>' +
-                      '<strong>Ações customizadas</strong>: visualizar localização de quem quer contratar em tempo-real' +
-                      '<br><strong>Avaliado em</strong> <span class="teal-text">US$ 68 bilhões</span>'
+        '<div class="small_margin_top small_margin_bottom line"><div class="left"></div><span>OU</span><div class="right"></div></div>' +
+        '<strong>Ações customizadas</strong>: visualizar localização de quem quer contratar em tempo-real' +
+        '<br><strong>Avaliado em</strong> <span class="teal-text">US$ 68 bilhões</span>'
       },
       {
         color: 'green',
@@ -51,9 +51,9 @@ content = {
           text: 'Quero meu whatsapp'
         },
         description: '<strong>Ações padrão</strong>: cadastro e login (sem verificação via SMS) <br> <strong>Ação customizada</strong>: mensagens de texto instantâneas' +
-                     '<div class="small_margin_top small_margin_bottom line"><div class="left"></div><span>OU</span><div class="right"></div></div>' +
-                     '<strong>Ações customizadas</strong>: gerenciar grupos e contatos ou ainda envio de arquivos em tempo-real' +
-                     '<br><strong>Avaliado em</strong> <span class="teal-text">US$ 19 bilhões</span>'
+        '<div class="small_margin_top small_margin_bottom line"><div class="left"></div><span>OU</span><div class="right"></div></div>' +
+        '<strong>Ações customizadas</strong>: gerenciar grupos e contatos ou ainda envio de arquivos em tempo-real' +
+        '<br><strong>Avaliado em</strong> <span class="teal-text">US$ 19 bilhões</span>'
       },
       {
         color: 'blue',
@@ -65,9 +65,9 @@ content = {
           text: 'Quero meu twitter'
         },
         description: '<strong>Ações padrão</strong>: cadastro e login (via Facebook, Gplus, Twitter e outros) <br> <strong>Ação customizada</strong>: time-line simples (como no antigo twitter)' +
-                      '<div class="small_margin_top small_margin_bottom line"><div class="left"></div><span>OU</span><div class="right"></div></div>' +
-                      '<strong>Ações customizadas</strong>: ganhar dinheiro com propagandas' +
-                      '<br><strong>Avaliado em</strong> <span class="teal-text">US$ 10 bilhões</span>'
+        '<div class="small_margin_top small_margin_bottom line"><div class="left"></div><span>OU</span><div class="right"></div></div>' +
+        '<strong>Ações customizadas</strong>: ganhar dinheiro com propagandas' +
+        '<br><strong>Avaliado em</strong> <span class="teal-text">US$ 10 bilhões</span>'
       }
     ]
   },

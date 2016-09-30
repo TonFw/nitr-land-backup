@@ -1,7 +1,9 @@
 'use strict';
 angular.module('FireLanding.controllers', [])
-  .controller('LandingCtrl', function($scope, $state, $sce, $location) {
-    $scope.content = content;
+  .controller('LandingCtrl', function($scope, $state, $sce, $stateParams, $location) {
+    localStorage.investorType = $stateParams.investorType;
+    $scope.content = window[localStorage.investorType+'_content'];
+
     $scope.visual_identity = visual_identity;
 
     var inviter = $location.search().r;

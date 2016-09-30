@@ -1,6 +1,5 @@
-# FireLanding
-LandingPage Conversion focused template. 
-Appropriate for Customer __Long Life Cycle__ Business models.
+# Savest
+FGC das Startups = Save your Investments on Savest.com
 
 It views framework is the [ActionTive](https://github.com/TonFw/ActionTive).
 All possible NITRO & Action dependencies such as JS & CSS must added on it framework & called if necessary.
