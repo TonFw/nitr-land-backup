@@ -5,14 +5,12 @@ content = {
   },
   banner: {
     main_value: 'Receba R$ 208 mil em investimento anjo com apenas 5 mil reais',
-    second_value: '',
+    second_value: 'Receba R$500 de desconto por indicação',
     bullets: [
       'Aumente suas chances de receber investimento',
+      'Exatamente como pediu ou seu dinheiro de volta',
       'Seu aplicativo pré-operacional entregue em até 1 mês',
-      'Valide sua maravilhosa ideia com seus amigos e família',
-      'Consiga ótimos sócios com bem menos esforço',
       // 'Graças à alta chance de investimento, fornecemos o capital a juros BAIXÍSSIMOS e a LONGO PRAZO de carência',
-      'Sinta-se mais seguro para investir mais em seu projeto'
     ],
     extra: 'GRÁTIS assessoria de Marketing',
     call_to_action: {

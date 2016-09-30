@@ -1,8 +1,11 @@
 'use strict';
 angular.module('FireLanding.controllers', [])
-  .controller('LandingCtrl', function($scope, $state, $sce) {
+  .controller('LandingCtrl', function($scope, $state, $sce, $location) {
     $scope.content = content;
     $scope.visual_identity = visual_identity;
+
+    var inviter = $location.search().r;
+    if(inviter) localStorage.invitedBy = inviter;
 
     $scope.escapeHTML = function(text) {
       return $sce.trustAsHtml(text);
@@ -67,7 +70,7 @@ angular.module('FireLanding.controllers', [])
     $scope.title = '';
     $scope.avatar = '';
     $scope.hashTags = '';
-    $scope.encodedURL = 'https://'+ window.location.hostname +'?r='+currentLead().id;
+    $scope.encodedURL = 'https://'+ window.location.hostname +'/#/startup?r='+currentLead().id;
 
     $scope.shareOn = function (socialMedia) {
       switch(socialMedia) {
